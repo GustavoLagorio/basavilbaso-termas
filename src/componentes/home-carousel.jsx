@@ -1,5 +1,7 @@
-import React from "react";
-import Slider from "react-slick";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {A11y, Autoplay, EffectCube} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/effect-cube';
 
 export default function HomeCarousel() {
 
@@ -10,37 +12,29 @@ export default function HomeCarousel() {
         "assets/bungalow4.jpg",
         "assets/bungalow5.jpg"
     ]
-    let settings = {
-        fade: true,
-        autoplay: true,
-        autoplaySpeed: 2500,
-        dots: false,
-        infinite: true,
-        speed: 1000,
-        draggable: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        vertical: false,
-        adaptiveHeight: true
-    };
+
     return (
-        <Slider {...settings}>
-            <div>
-                <img src={imagenes[0]} alt="" />
-            </div>
-            <div>
-                <img src={imagenes[1]} alt="" />
-            </div>
-            <div>
-                <img src={imagenes[2]} alt="" />
-            </div>
-            <div>
-                <img src={imagenes[3]} alt="" />
-            </div>
-            <div>
-                <img src={imagenes[4]} alt="" />
-            </div>
-        </Slider>
+        <Swiper
+            modules={[A11y, Autoplay, EffectCube]}
+            spaceBetween={100}
+            autoplay={{delay:2500, disableOnInteraction:false}}
+            slidesPerView={1}
+            centeredSlides={true}
+            effect={'cube'}
+            cubeEffect={{
+                shadow: false,
+                slideShadows: false,
+                shadowOffset: 0,
+                shadowScale: 0,
+              }}              
+              speed={1000}
+              loop={true}
+        >
+            <SwiperSlide><img src={imagenes[0]} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={imagenes[1]} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={imagenes[2]} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={imagenes[3]} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={imagenes[4]} alt="" /></SwiperSlide>
+        </Swiper>
     );
-}
+};

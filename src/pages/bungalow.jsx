@@ -1,10 +1,11 @@
 import Calendario from "../componentes/calendario";
 import BungalowCarousel from "../componentes/bungalow-carousel";
+
 import "../styles/bungalow.css"
 import "../styles/calendario.css"
 
 
-const Bungalow = () => {
+export function Bungalow() {
   return (
     <main className="bungalow_main">
       <div className="bungalow_main_titulo">
@@ -45,4 +46,10 @@ const Bungalow = () => {
   )
 }
 
-export default Bungalow
+export async function loaderBungalow({params}) {
+  const {id} = params
+  console.log(id);
+  return{}
+
+}
+

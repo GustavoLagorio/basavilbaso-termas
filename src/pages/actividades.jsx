@@ -2,7 +2,7 @@ import "../styles/actividades.css";
 
 const Actividades = () => {
   return (
-    <main className="actividades_main">
+    <main className="actividades_main" id="actividades">
       <div className="actividades_main_titulo">
         <h1>Actividades</h1>
       </div>

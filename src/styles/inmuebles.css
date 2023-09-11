@@ -22,64 +22,29 @@
     padding: 10% 0 0 5%;
 }
 
-.slick-slider {
-    margin: 2rem 10%;
-    width: 80%;
-    height: 80vh;
+.swiper {
+    width: 90%;
+    margin: 3rem 5%;
 }
 
-.slick-slider img {
-    height: 70vh;
+.swiper-wrapper, .swiper-slide {
+    background: none;
+}
+
+.swiper-pagination {
+    background: none;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    background: none;
+    color: #333333;
+}
+
+
+.swiper img {
     width: 100%;
     object-fit: cover;
-    object-position: center center;
-}
-
-.slick-list, .slick-track {
-    height: 70vh;
-}
-
-.slick-arrow {
-    width: 5rem;
-    height: 3rem;
-    position: absolute;
-    z-index: +1;
-    top: 40%;
-    
-}
-
-.slick-prev {
-    left: calc(0% - 50px);
-    background-image: url(/assets/icons/smile.png);
-}
-
-.slick-next {
-    right: calc(0% - 50px);
-    background-image: url(/assets/icons/smile.png);
-}
-
-.slick-dots {
-    display: flex !important;
-    flex-flow: row nowrap;
-    list-style:none;
-    width: 60%;
-    margin: 1rem 20%;
-    justify-content: space-between;
-}
-
-.slick-dots li {
-    display: inline-block;
-    width: 3rem;
-    height: 3rem;
-}
-
-.slick-dots li button {
-    font-size: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(/assets/icons/cocina.png);
-    background-position: center center;
-    background-size: cover;
+    object-position:  center center;
 }
 
 .inmuebles_main h2 {
@@ -92,4 +57,11 @@
     font-size: 1.2rem;
     width: 90%;
     margin: 1rem 5%;
+}
+
+@media (min-width: 768px) {
+    .swiper {
+        width: 60%;
+        margin: 3rem 20%;
+    }
 }

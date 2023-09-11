@@ -6,7 +6,7 @@ import Home from "./pages/home";
 import Error404 from "./componentes/error-404";
 import Layout from "./componentes/layout";
 import Bungalows from "./pages/bungalows";
-import Bungalow from "./pages/bungalow";
+import {Bungalow, loaderBungalow} from "./pages/bungalow";
 import Actividades from "./pages/actividades";
 import Termas from "./pages/termas";
 import Inmuebles from "./pages/inmuebles";
@@ -30,8 +30,9 @@ const router = createBrowserRouter([
         errorElement: <Error404 /> //* si la pagina no existe mostramos este componente
       }, 
       {
-        path: "/bungalow", //* cuando entramos a la url
+        path: "/bungalow:id", //* cuando entramos a la url
         element: <Bungalow />, //* renderizamos este componente,
+        loader: loaderBungalow,
         errorElement: <Error404 /> //* si la pagina no existe mostramos este componente
       },
       {

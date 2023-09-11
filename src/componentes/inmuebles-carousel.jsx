@@ -7,7 +7,7 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/effect-cube';
 import 'swiper/css/zoom';
 
-export default function BungalowCarousel() {
+export default function InmueblesCarousel() {
 
     const imagenes = [
         "assets/bungalow1.jpg",

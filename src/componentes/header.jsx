@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { Navigate } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import "../styles/header.css";
 
@@ -14,16 +13,20 @@ export default function Header() {
   const [activo, setActivo] = useState("home"); //Cambia a activo secciones de la navbar
 
   const activarEnlace = (enlace) => {
+
     setActivo(enlace);
+    if(activado) {
+      activar()
+    }    
   };
 
   return (
-    <header>
+    <header id="header">
       <nav className="nav">
         <div className="nav_logo">
-          <Link to="/">
+          <HashLink to="/#header">
             <img src="/assets/logo.png" alt="Logo Amanecer en Termas" />
-          </Link>
+          </HashLink>
         </div>
         <div className="nav_titulo">
           <p>Amanecer en Termas</p>
@@ -33,22 +36,22 @@ export default function Header() {
         <div className={activado ? "separador" : "separador activado"}></div>
           <ul className="menu_list">
             <li className={activo === "home" ? "list_item activo" : "list_item"}>
-              <Link to="/" onClick={() => activarEnlace("home")}>Home</Link>
+              <HashLink to="/#header" onClick={() => activarEnlace("home")}>Home</HashLink>
             </li>
             <li className={activo === "bungalows" ? "list_item activo" : "list_item"}>
-              <Link to="/bungalows" onClick={() => activarEnlace("bungalows")}>Bungalows</Link>
+              <HashLink to="/bungalows#header" onClick={() => activarEnlace("bungalows")}>Bungalows</HashLink>
             </li>
             <li className={activo === "actividades" ? "list_item activo" : "list_item"}>
-              <Link to="/actividades" onClick={() => activarEnlace("actividades")}>Actividades</Link>
+              <HashLink to="/actividades#header" onClick={() => activarEnlace("actividades")}>Actividades</HashLink>
             </li>
             <li className="list_item">
-              <Link to="/footer#contacto">Contacto</Link>
+              <HashLink to="#contacto" onClick={() => activarEnlace("contacto")}>Contacto</HashLink>
             </li>
             <li className={activo === "termas" ? "list_item activo" : "list_item"}>
-              <Link to="/termas" onClick={() => activarEnlace("termas")}>Termas</Link>
+              <HashLink to="/termas#header" onClick={() => activarEnlace("termas")}>Termas</HashLink>
             </li>
             <li className={activo === "inmuebles" ? "list_item activo" : "list_item"}>
-              <Link to="/inmuebles" onClick={() => activarEnlace("inmuebles")}>Inmuebles</Link>
+              <HashLink to="/inmuebles#header" onClick={() => activarEnlace("inmuebles")}>Inmuebles</HashLink>
             </li>
           </ul>
         </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Termas = () => {
   return (
-    <div>Termas</div>
+    <div id="termas">Termas</div>
   )
 }
 

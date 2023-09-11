@@ -1,16 +1,15 @@
-import "../styles/home.css";
-
 import HomeCarousel from "../componentes/home-carousel";
+import { HashLink } from "react-router-hash-link";
 
-import { Link } from "react-router-dom";
+import "../styles/home.css";
 
 export default function Body() {
   return (
-    <main className="home_main" id="main">
+    <main className="home_main" id="home">
       <div className="reservas">
-        <Link to={"/bungalows"} id="reservas">
+        <HashLink to={"/bungalows#header"} id="reservas">
           Reservar
-        </Link>
+        </HashLink>
       </div>
       <div className="home_main_titulo">
         <div className="home_main_titulo_text">
@@ -28,7 +27,7 @@ export default function Body() {
           <p>Nuestros Bungalows cuentan con el mejor equipamiento y confort, para que tu experiencia en las Termas
             Basavilbaso sea la mejor. Te ofrecemos un espacio para disfrutar en familia o en pareja.
           </p>
-          <Link to={"/bungalows"} className="btn-accion">Reservar</Link>
+          <HashLink to={"/bungalows#header"} className="btn-accion">Reservar</HashLink>
         </div>
         <HomeCarousel className="home_main_bungalows_carrousel" />
       </div>
@@ -57,7 +56,7 @@ export default function Body() {
             Disfruta de tratamientos de spa, masajes y buena comida. Tu escapada
             de tranquilidad te espera en Termas de Basavilbaso.
           </p>
-          <Link to={"/termas"} className="btn-accion">Conocer más</Link>
+          <HashLink to={"/termas#header"} className="btn-accion">Conocer más</HashLink>
         </div>
       </div>
     </main>
