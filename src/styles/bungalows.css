@@ -1,0 +1,123 @@
+.bungalows_main {
+  position: relative;
+  width: 100%;
+  top: 10vh; }
+  .bungalows_main_titulo {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../assets/predio1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .bungalows_main_titulo h1 {
+      font-style: italic;
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: none;
+      -webkit-text-stroke: 1px #254b5e;
+      color: #f1e6d2;
+      padding: 10% 0 0 5%; }
+  .bungalows_main_filtro {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+    box-shadow: 13px 6px 15px rgba(0, 0, 0, 0.6);
+    background-color: #4697b4; }    
+    .bungalows_main_filtro div,
+    .bungalows_main_filtro form,
+    .bungalows_main_filtro h2 {
+      background-color: #4697b4; }
+    .bungalows_main_filtro form {
+      padding-top: 1rem; }
+    .bungalows_main_filtro label,
+    .bungalows_main_filtro input,
+    .bungalows_main_filtro .btn-accion {
+      margin: 1rem 0;
+      padding: 0.5rem;
+      background-color: #254b5e;
+      color: #f1e6d2; }
+  .bungalows_main_list_bungalow {
+    padding: 2rem 1rem; }
+  .bungalows_main_list_bungalow .btn-accion {
+    color: white;
+  }
+  .bungalows_main_list_bungalow:nth-child(even),
+  .bungalows_main_list_bungalow:nth-child(even) .bungalows_main_list_bungalow_info,
+  .bungalows_main_list_bungalow:nth-child(even) .bungalows_main_list_bungalow_info h2,
+  .bungalows_main_list_bungalow:nth-child(even) .bungalows_main_list_bungalow_info p {
+    background-color: #a7d0d2;
+  }
+    .bungalows_main_list_bungalow h2 {
+      margin: 1rem 0; }
+    .bungalows_main_list_bungalow_imagenes {
+      width: 95%;
+      height: 50vh;
+      margin: 1rem 2.5%;
+      background-color: white;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 50% 1fr;
+      gap: 0.5rem;
+      overflow: hidden;
+      padding: 0.5rem; }
+      .bungalows_main_list_bungalow_imagenes img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center; }
+    .bungalows_main_list_bungalow a {
+      color: #f1e6d2;
+      width: 60%;
+      display: block;
+      margin: 3rem 27.5% 0 2.5%; }  
+
+@media (min-width: 768px) {
+  .bungalows_main_filtro {
+    width: 70%;
+    text-align: center;
+    margin: 2rem 15%; }
+  .bungalows_main_list_bungalow:nth-child(even) {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-areas: "titulo imagen"
+ "p imagen"
+ "btn imagen"; }
+    .bungalows_main_list_bungalow:nth-child(even) h2 {
+      grid-area: titulo;
+      padding: 2rem 0 0 2rem; }
+    .bungalows_main_list_bungalow:nth-child(even) p {
+      grid-area: p;
+      padding: 2rem; }
+    .bungalows_main_list_bungalow:nth-child(even) a {
+      grid-area: btn;
+      margin: 0 0 0 2rem; }
+    .bungalows_main_list_bungalow.par_imagenes {
+      grid-area: imagen;
+      height: 100%;
+      margin: 0;
+      width: 100%; }
+  .bungalows_main_list_bungalow {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-areas: "imagen titulo"
+ "imagen p"
+ "imagen btn";
+    align-content: center; }
+    .bungalows_main_list_bungalow h2 {
+      grid-area: titulo;
+      padding: 2rem 0 0 2rem; }
+    .bungalows_main_list_bungalow p {
+      grid-area: p;
+      padding: 2rem; }
+    .bungalows_main_list_bungalow a {
+      grid-area: btn;
+      margin: 0 0 0 2rem; }
+    .bungalows_main_list_bungalow_imagenes {
+      grid-area: imagen;
+      height: 100%;
+      margin: 0;
+      width: 100%; } }

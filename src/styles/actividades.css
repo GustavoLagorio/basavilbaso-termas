@@ -1,0 +1,97 @@
+.actividades_main {
+  position: relative;
+  top: 10vh;
+}
+
+.actividades_main_titulo {
+  width: 100%;
+  height: 50vh;
+  background-image: url(../assets/predio1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.actividades_main_titulo h1 {
+  font-style: italic;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: none;
+  -webkit-text-stroke: 1px #254b5e;
+  color: #f1e6d2;
+  padding: 10% 0 0 5%;
+}
+
+.actividades_main_list_actividad {
+  width: 90%;
+  margin: 5%;
+  text-align: center;
+}
+
+.actividades_main_list_actividad .actividad_desc h2 {
+  color: #254b5e;
+  font-size: 2.5rem;
+}
+
+.actividades_main_list_actividad .actividad_desc h3 {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.actividades_main_list_actividad .actividad_desc p {
+  margin-bottom: 1rem;
+}
+
+.actividades_main_list_actividad .actividad_imagen {
+  width: 100%;
+  overflow: hidden;
+  height: 50vh;
+}
+
+.actividades_main_list_actividad .actividad_imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .actividades_main_list {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10% 5%;
+  }
+
+  .actividades_main_list_actividad {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 50%;
+    margin: 0;
+    align-items: center;
+  }
+
+  .actividades_main_list_actividad .actividad_desc {
+    width: 100%;
+  }
+
+  .actividades_main_list_actividad .actividad_imagen {
+    width: 100%;
+    height: 100%;
+  }
+
+  .actividades_main_list_actividad .actividad_imagen img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .actividades_main_list_actividad.invertido {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 1200px) {
+  .actividades_main_list {
+    width: 100%;
+    margin: 5% 0;
+  }
+}

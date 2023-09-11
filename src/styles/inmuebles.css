@@ -1,0 +1,95 @@
+.inmuebles_main {
+    position: relative;
+    top: 10vh;
+}
+
+.inmuebles_main_titulo {
+    width: 100%;
+    height: 50vh;
+    background-image: url(assets/bungalow3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.inmuebles_main_titulo h1 {
+    font-style: italic;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: none;
+    -webkit-text-stroke: 1px #254b5e;
+    color: #f1e6d2;
+    padding: 10% 0 0 5%;
+}
+
+.slick-slider {
+    margin: 2rem 10%;
+    width: 80%;
+    height: 80vh;
+}
+
+.slick-slider img {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.slick-list, .slick-track {
+    height: 70vh;
+}
+
+.slick-arrow {
+    width: 5rem;
+    height: 3rem;
+    position: absolute;
+    z-index: +1;
+    top: 40%;
+    
+}
+
+.slick-prev {
+    left: calc(0% - 50px);
+    background-image: url(/assets/icons/smile.png);
+}
+
+.slick-next {
+    right: calc(0% - 50px);
+    background-image: url(/assets/icons/smile.png);
+}
+
+.slick-dots {
+    display: flex !important;
+    flex-flow: row nowrap;
+    list-style:none;
+    width: 60%;
+    margin: 1rem 20%;
+    justify-content: space-between;
+}
+
+.slick-dots li {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/icons/cocina.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.inmuebles_main h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.inmuebles_main p {
+    font-size: 1.2rem;
+    width: 90%;
+    margin: 1rem 5%;
+}
