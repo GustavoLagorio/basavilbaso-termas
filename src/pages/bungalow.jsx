@@ -1,32 +1,32 @@
 import Calendario from "../componentes/calendario";
 import BungalowCarousel from "../componentes/bungalow-carousel";
+import listaBungalows from "../../lista-bungalows";
+import { useParams } from "react-router-dom";
+import { Comodidades } from "../componentes/comodidades";
 
 import "../styles/bungalow.css"
 import "../styles/calendario.css"
 
 
+
+
+
 export function Bungalow() {
+
+  const {id} = useParams();
+  console.log(id);
+  const bungalowSeleccionado = listaBungalows.find(bungalow => bungalow.id === parseInt(id));
+  console.log(bungalowSeleccionado.imagenes[0]);
+  
+
   return (
     <main className="bungalow_main">
-      <div className="bungalow_main_titulo">
-        <h1>Nombre</h1>
+      <div className="bungalow_main_titulo" style={{backgroundImage: `url(${bungalowSeleccionado.imagenes[0]})`}}>
+        <h1>{bungalowSeleccionado.nombre}</h1>
       </div>
-      <BungalowCarousel />
+      <BungalowCarousel imagenes={bungalowSeleccionado.imagenes}/>
       <h2>Servicios y características</h2>
-      <ul className="bungalow_main_comodidades_list">
-        <li className="bungalow_main_comodidades_list_item">
-          <img src="assets/icons/heladera.png" alt="" />
-        </li>
-        <li className="bungalow_main_comodidades_list_item">
-          <img src="assets/icons/parrilla.png" alt="" />
-        </li>
-        <li className="bungalow_main_comodidades_list_item">
-          <img src="assets/icons/parking.png" alt="" />
-        </li>
-        <li className="bungalow_main_comodidades_list_item">
-          <img src="assets/icons/tv.png" alt="" />
-        </li>
-      </ul>
+      <Comodidades comodidades={bungalowSeleccionado.comodidades}/>
       <p>Condiciones de reserva</p>
       <form action="" className="bungalow_main_form">
         <div className="bungalow_main_form_usuario">
@@ -45,11 +45,3 @@ export function Bungalow() {
     </main>
   )
 }
-
-export async function loaderBungalow({params}) {
-  const {id} = params
-  console.log(id);
-  return{}
-
-}
-

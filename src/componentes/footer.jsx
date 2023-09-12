@@ -18,7 +18,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="footer_ubicacion_mapa">
-          <img src="assets/mapa-final.png" alt="" />
+          <img src="../assets/mapa-final.png" alt="" />
         </div>
         <div className="footer_ubicacion_rutas">
           <h3>Como llegar</h3>

@@ -6,7 +6,7 @@
 .inmuebles_main_titulo {
     width: 100%;
     height: 50vh;
-    background-image: url(assets/bungalow3.jpg);
+    background-image: url(../assets/bungalow3.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
