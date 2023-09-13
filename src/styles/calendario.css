@@ -67,9 +67,13 @@ span::after {
 }
 
 .rdrDateInput.rdrDateDisplayItem input {
-    background-color: white;
     margin: 0.5rem 0;
     height: 2rem;
+    border-radius: 0;
+    border: none;
+    background: none;
+    text-decoration:underline;
+    text-decoration-thickness: 3px
 }
 
 .rdrDateRangePickerWrapper{

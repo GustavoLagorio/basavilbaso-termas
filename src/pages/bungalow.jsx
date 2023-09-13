@@ -29,6 +29,7 @@ export function Bungalow() {
       <Comodidades comodidades={bungalowSeleccionado.comodidades}/>
       <p>Condiciones de reserva</p>
       <form action="" className="bungalow_main_form">
+        <h3>Completa con tus datos para reservar</h3>
         <div className="bungalow_main_form_usuario">
           <label htmlFor="nombre" className="nombre">Nombre:</label>
           <input type="text" id="nombre" required placeholder="Ingresa tu Nombre" />
