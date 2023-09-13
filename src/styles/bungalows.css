@@ -27,7 +27,10 @@
     .bungalows_main_filtro form,
     .bungalows_main_filtro h2 {
       background-color: #4697b4; }
-    .bungalows_main_filtro form {
+    .bungalows_main_filtro {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
       padding-top: 1rem; }
     .bungalows_main_filtro label,
     .bungalows_main_filtro input,
@@ -40,6 +43,7 @@
     padding: 2rem 1rem; }
   .bungalows_main_list_bungalow .btn-accion {
     color: white;
+    display: flex;
   }
   .bungalows_main_list_bungalow:nth-child(even),
   .bungalows_main_list_bungalow:nth-child(even) .bungalows_main_list_bungalow_info,
@@ -51,13 +55,13 @@
       margin: 1rem 0; }
     .bungalows_main_list_bungalow_imagenes {
       width: 95%;
-      height: 50vh;
+      height: auto;
       margin: 1rem 2.5%;
       background-color: white;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 50% 1fr;
-      gap: 0.5rem;
+      grid-template-rows: 50% auto;
+      gap: 0.25rem;
       overflow: hidden;
       padding: 0.5rem; }
       .bungalows_main_list_bungalow_imagenes img {

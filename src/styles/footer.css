@@ -1,156 +1,249 @@
 footer {
-    margin-top: 4rem; }
-    footer .footer_ubicacion h2 {
-      padding-left: 1rem;
-      margin-bottom: 1rem; }
-    footer .footer_ubicacion_contacto, footer .footer_ubicacion_rutas {
-      background-color: #4697b4;
-      width: 80%;
-      margin: 0 10%;
-      padding: 1rem 0.5rem;
-      display: flex;
-      flex-flow: column nowrap;
-      align-content: center;
-      position: relative;
-      box-shadow: 13px 6px 15px rgba(0, 0, 0, 0.6);
-      z-index: +1; }
-      footer .footer_ubicacion_contacto h3, footer .footer_ubicacion_rutas h3 {
-        font-size: 2rem; }
-      footer .footer_ubicacion_contacto h3,
-      footer .footer_ubicacion_contacto p, footer .footer_ubicacion_rutas h3,
-      footer .footer_ubicacion_rutas p {
-        background-color: #4697b4;
-        text-align: center;
-        margin-bottom: 1rem; }
-        footer .footer_ubicacion_contacto img,
-        footer .footer_ubicacion_contacto img, footer .footer_ubicacion_rutas h3 img,
-        footer .footer_ubicacion_rutas img {
-          background: none; }
+  position: relative;
+  top: 10vh;
+  margin-top: 5rem;
+}
 
-          .footer_ubicacion_contacto img {
-            width: 1.1rem;
-            align-self: center;
-          }
-      footer .footer_ubicacion_contacto a, footer .footer_ubicacion_rutas a {
-        color: #f1e6d2; }
-    footer .footer_ubicacion_mapa {
-      height: 45vh;
-      width: 100%;
-      z-index: 0; }
-      footer .footer_ubicacion_mapa img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center center;
-      }
-    footer .footer_ubicacion_rutas {
-      padding: 2rem 0; }
-      footer .footer_ubicacion_rutas ul {
-        background-color: #4697b4; }
-        footer .footer_ubicacion_rutas ul li,
-        footer .footer_ubicacion_rutas ul span {
-          background-color: #4697b4;
-          height: 3rem;
-          text-align: center; }
-          footer .footer_ubicacion_rutas ul li a,
-          footer .footer_ubicacion_rutas ul span a {
-            background-color: #4697b4; }
-          footer .footer_ubicacion_rutas ul li a,
-          footer .footer_ubicacion_rutas ul span a {
-            padding: 0;
-            background-color: #4697b4;
-            color: #333333;
-            font-size: 1rem; }
-        footer .footer_ubicacion_rutas ul li {
-          display: flex;
-          justify-content: center;
-          border: 0;
-          width: 100%; }
-          footer .footer_ubicacion_rutas ul li span:last-child {
-            width: 80%; }
-    footer .footer_separador {
-      background: #254B5E;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      height: 0.3rem;
-      width: 50%;
-      margin: 1.5rem 25%; }
-    footer .footer_logo {
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center; }
-      footer .footer_logo img {
-        width: 40%;
-        max-width: 300px;
-      }
-      footer .footer_logo p {
-        font-family: 'Satisfy', cursive;
-        font-size: 1.1rem;
-        color: #02B8E0; }
-      footer .footer_logo p:last-child {
-        font-family: 'Poppins', sans-serif;
-        font-size: 0.5rem;
-        font-weight: 300;
-        color: #0B95D6;
-        margin-top: -0.5rem; }
-    footer .footer_redes_list {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-evenly;
-      margin: 1rem; }
-  
-  @media (min-width: 768px) {
-    footer {
-      margin-top: 20%; }
-      footer .footer_ubicacion {
-        display: grid;
-        grid-template-columns: 0.7fr 1fr;
-        grid-template-rows: 8vh 60vh 30vh;
-        grid-template-areas: "titulo mapa"
-   "contacto mapa"
-   "rutas rutas"; }
-        footer .footer_ubicacion h2 {
-          grid-area: titulo;
-          text-align: center;
-        font-size: 2rem;
-      margin-bottom: 0.5rem;}
-        footer .footer_ubicacion_contacto {
-          grid-area: contacto;
-          height: min-content;
-          margin: 0 0 2rem 10%;
-          z-index: +1; }
-        footer .footer_ubicacion_mapa {
-          grid-area: mapa;
-          width: 100%;
-          height: 60vh;
-          margin-left: -2rem;
-          z-index: 0; }
-        footer .footer_ubicacion_rutas {
-          grid-area: rutas;
-          width: 100%;
-          margin: 0; }
-          footer .footer_ubicacion_rutas ul {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            height: 100%;
-            justify-items: center; }
-            footer .footer_ubicacion_rutas ul li {
-              height: 1.5rem;
-              width: 100%;
-              margin-bottom: 1rem;
-              align-self: center; }
-              footer .footer_ubicacion_rutas ul li span {
-                height: 100%; }
-                footer .footer_ubicacion_rutas ul li span a {
-                  font-size: 1.5rem; }
-                footer .footer_ubicacion_rutas ul li span img {
-                  height: 100%;
-                  width: 100%; }
-              footer .footer_ubicacion_rutas ul li span:last-child {
-                width: 50%; } }
-                footer .footer_logo p {
-                  font-size: 1.5rem;
-                }
-                footer .footer_logo p:last-child {
-                  font-size: 0.8rem;
-                }
+footer .footer_ubicacion h2 { 
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+footer .footer_ubicacion_contacto,
+footer .footer_ubicacion_rutas {
+  background-color: #4697b4;
+  width: 80%;
+  margin: 0 10%;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  position: relative;
+  box-shadow: 13px 6px 15px rgba(0, 0, 0, 0.6);
+  z-index: +1;  
+}
+
+footer .footer_ubicacion_contacto h3,
+footer .footer_ubicacion_rutas h3 {
+  font-size: 2rem;
+}
+
+footer .footer_ubicacion_contacto h3,
+footer .footer_ubicacion_contacto p,
+footer .footer_ubicacion_rutas h3,
+footer .footer_ubicacion_rutas p {
+  background-color: #4697b4;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+footer .footer_ubicacion_contacto img,
+footer .footer_ubicacion_contacto img,
+footer .footer_ubicacion_rutas h3 img,
+footer .footer_ubicacion_rutas img {
+  background: none;
+}
+
+.footer_ubicacion_contacto img {
+  width: 1.1rem;
+  align-self: center;
+}
+
+footer .footer_ubicacion_contacto a,
+footer .footer_ubicacion_rutas a {
+  color: #f1e6d2;
+}
+
+footer .footer_ubicacion_mapa {
+  height: 45vh;
+  width: 100%;
+  z-index: 0;
+}
+
+footer .footer_ubicacion_mapa img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+footer .footer_ubicacion_rutas {
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+footer .footer_ubicacion_rutas ul {
+  background-color: #4697b4;
+}
+
+footer .footer_ubicacion_rutas ul li,
+footer .footer_ubicacion_rutas ul span {
+  background-color: #4697b4;
+  height: 3rem;
+  text-align: center;
+}
+
+footer .footer_ubicacion_rutas ul li a,
+footer .footer_ubicacion_rutas ul span a {
+  background-color: #4697b4;
+}
+
+footer .footer_ubicacion_rutas ul li a,
+footer .footer_ubicacion_rutas ul span a {
+  padding: 0;
+  background-color: #4697b4;
+  color: #333333;
+  font-size: 1rem;
+}
+
+footer .footer_ubicacion_rutas ul li {
+  display: flex;
+  justify-content: center;
+  border: 0;
+  width: 100%;
+}
+
+footer .footer_ubicacion_rutas ul li span:last-child {
+  width: 80%;
+}
+
+footer .footer_separador {
+  background: #254B5E;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  height: 0.3rem;
+  width: 50%;
+  margin: 1.5rem 25%;
+}
+
+footer .footer_logo {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+footer .footer_logo img {
+  width: 40%;
+  max-width: 300px;
+}
+
+footer .footer_logo p {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.1rem;
+  color: #02B8E0;
+}
+
+footer .footer_logo p:last-child {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.5rem;
+  font-weight: 300;
+  color: #0B95D6;
+  margin-top: -0.5rem;
+}
+
+footer .footer_redes_list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+
+@media (min-width: 768px) {
+
+  footer .footer_ubicacion {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-template-rows: 8vh 60vh auto;
+    grid-template-areas: "titulo mapa"
+      "contacto mapa"
+      "rutas rutas";
+      row-gap: 2rem;
+  }
+
+  footer .footer_ubicacion h2 {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  footer .footer_ubicacion_contacto {
+    grid-area: contacto;
+    height: min-content;
+    margin: 0 0 2rem 10%;
+    z-index: +1;
+  }
+
+  footer .footer_ubicacion_mapa {
+    grid-area: mapa;
+    width: 100%;
+    height: 100%;
+    margin-left: -2rem;
+    z-index: 0;
+  }
+
+  footer .footer_ubicacion_rutas {
+    grid-area: rutas;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  footer .footer_ubicacion_rutas ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    justify-items: center;
+  }
+
+  footer .footer_ubicacion_rutas ul li {
+    height: 1.5rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    align-self: center;
+  }
+
+  footer .footer_ubicacion_rutas ul li span {
+    height: 100%;
+  }
+
+  footer .footer_ubicacion_rutas ul li span a {
+    font-size: 1.5rem;
+  }
+
+  footer .footer_ubicacion_rutas ul li span img {
+    height: 100%;
+    width: 100%;
+  }
+
+  footer .footer_ubicacion_rutas ul li span:last-child {
+    width: 50%;
+  }
+}
+
+footer .footer_logo p {
+  font-size: 1.5rem;
+}
+
+footer .footer_logo p:last-child {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 1200px) {
+
+  .footer_redes_list {
+    height: 2rem;
+  }
+
+  .footer_redes_list li {
+    height: 100%;
+    width: 2rem;
+  }
+
+  .footer_redes_list li a, .footer_redes_list li img {
+
+    width: 100%;
+  }
+}

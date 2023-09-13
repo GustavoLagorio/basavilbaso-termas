@@ -315,6 +315,7 @@
 
   .home_main .reservas:hover {
     transform: translateX(-2vw);
+    transition: all 0.5s ease-in-out;
   }
 
   .home_main_bungalows .swiper {
