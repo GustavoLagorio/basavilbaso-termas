@@ -51,7 +51,7 @@
   font-size: 2.5rem;
   font-weight: bold;
   background: none;
-  -webkit-text-stroke: 1px #254b5e;
+  /*-webkit-text-stroke: 1px #254b5e;*/
   color: #f1e6d2;
   padding-left: 5%;
 }
@@ -222,6 +222,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
+    padding-left: 12%;
+  }
+  
+  .home_main_titulo .txt-bungalows {
+    padding-left: 12%;
+  }
+
+
+  .home_main_titulo .txt-basavilbaso {
+    padding-left: 8%;
   }
 
   .home_main_bungalows {
