@@ -12,7 +12,7 @@ export default function BungalowsList() {
                 <div key={bungalow.id} className='bungalows_main_list_bungalow'>
                     <div className='bungalows_main_list_bungalow_info'>
                         <h2>{bungalow.nombre}</h2>
-                        <p>{bungalow.description}</p>
+                        <p>{bungalow.descripcion}</p>
                     </div>
                     <div className='bungalows_main_list_bungalow_imagenes'>
                         {bungalow.imagenes.map((imagen, i) => (

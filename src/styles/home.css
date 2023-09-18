@@ -31,7 +31,10 @@
 }
 
 .home_main_titulo {
-  background-image: url(../assets/portada.jpg);
+  background-image: url(https://i.imgur.com/JWlB6yy.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   height: 90vh;
   width: 100%;
   display: flex;
@@ -329,6 +332,10 @@
 }
 
 @media (min-width: 1200px) {
+  .home_main_titulo {    
+    background-position: center 30%;
+  }
+
   .home_main .reservas {
     width: 2.5%;
     left: 97.5%;

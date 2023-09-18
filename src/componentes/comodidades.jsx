@@ -11,6 +11,15 @@ const listaComodidades = {
     personas: 'assets/icons/wifi.png',
     toallas: 'assets/icons/wifi.png',
     vajilla: 'assets/icons/wifi.png',
+    // microondas: '',
+    // netflix: '',
+    // aire: '',
+    // pava: '',
+    // vajilla: '',
+    // secador: '',
+    // caja: '',
+    // electrodomesticos: '',
+    // lavarropas: ''
 }
 
 export const Comodidades = ({comodidades}) => {

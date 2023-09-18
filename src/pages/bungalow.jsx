@@ -16,15 +16,15 @@ export function Bungalow() {
   const {id} = useParams();
   console.log(id);
   const bungalowSeleccionado = listaBungalows.find(bungalow => bungalow.id === parseInt(id));
-  console.log(bungalowSeleccionado.imagenes[0]);
+  console.log(bungalowSeleccionado.galeria[0]);
   
 
   return (
     <main className="bungalow_main">
-      <div className="bungalow_main_titulo" style={{backgroundImage: `url(${bungalowSeleccionado.imagenes[0]})`}}>
+      <div className="bungalow_main_titulo" style={{backgroundImage: `url(${bungalowSeleccionado.galeria[0]})`}}>
         <h1>{bungalowSeleccionado.nombre}</h1>
       </div>
-      <BungalowCarousel imagenes={bungalowSeleccionado.imagenes}/>
+      <BungalowCarousel imagenes={bungalowSeleccionado.galeria}/>
       <h2>Servicios y características</h2>
       <Comodidades comodidades={bungalowSeleccionado.comodidades}/>
       <p>Condiciones de reserva</p>
