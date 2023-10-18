@@ -16,7 +16,6 @@
     font-size: 2.5rem;
     font-weight: bold;
     background: none;
-    -webkit-text-stroke: 1px #254b5e;
     color: #f1e6d2;
     padding: 10% 0 0 5%;
 }
@@ -93,15 +92,27 @@ h2 {
 .bungalow_main_form h3 {
     text-align: center;
     background: none;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .nombre, .nombre input, .apellido, .apellido input,
-.email, .email input, .dni, .dni input {
+.email, .email input, .dni, .dni input{
     font-size: 1.2rem;
     font-weight: bolder;
     height: 2rem;
     width: 50%;
+    margin-bottom: 1rem;
+}
+
+label.ocupantes {
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+select.ocupantes {
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.2rem;
 }
 
 .nombre, .apellido, .email, .dni {
@@ -119,6 +130,17 @@ h2 {
 
 #nombre::placeholder, #apellido::placeholder, #email::placeholder, #dni::placeholder {
     color: #f1e6d2;
+}
+
+.precio .separador {
+    height: 1px;
+    background-color: #333333;
+    width: 50%;
+    margin: 0 25%;
+}
+
+.terminos {
+    margin: 3rem 0;
 }
 
 @media (min-width: 768px) {

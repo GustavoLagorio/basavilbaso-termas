@@ -11,8 +11,6 @@ import 'swiper/css/zoom';
 
 export default function BungalowCarousel({ imagenes }) {
 
-    console.log(imagenes);
-
     return (
         <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube, Zoom]}
@@ -39,32 +37,7 @@ export default function BungalowCarousel({ imagenes }) {
                          <img src={imagen} alt="" />
                      </div>
                  </SwiperSlide>
-            ))}
-            {/* <SwiperSlide>
-                <div className='swiper-zoom-container'>
-                    <img src={imagenes[0]} alt="" />
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='swiper-zoom-container'>
-                    <img src={imagenes[1]} alt="" />
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='swiper-zoom-container'>
-                    <img src={imagenes[2]} alt="" />
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='swiper-zoom-container'>
-                    <img src={imagenes[3]} alt="" />
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='swiper-zoom-container'>
-                    <img src={imagenes[4]} alt="" />
-                </div>
-            </SwiperSlide> */}
+            ))}            
         </Swiper>
     );
 };

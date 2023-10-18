@@ -37,9 +37,24 @@
       "vajilla",
       "toalla",
       "caja",
-      "parking"
+      "parking",
+      "microondas",
+      "pava",
+      "aire",
+      "ventilador",
+      "heladera",
+      "tv"
     ],
-    "precio": 10000
+    "precio": [
+      {
+        "ocupantes": 2,
+        "costo": 25000
+      },
+      {
+        "ocupantes": 4,
+        "costo": 30000
+      }
+    ]
   },
   {
     "_id": 2,
@@ -91,9 +106,23 @@
       "secador",
       "parrilla",
       "toallas",
-      "caja"
+      "caja",
+      "juego de mesa"
     ],
-    "precio": 15000
+    "precio": [
+      {
+        "ocupantes": 2,
+        "costo": 25000
+      },
+      {
+        "ocupantes": 3,
+        "costo": 28000
+      },
+      {
+        "ocupantes": 4,
+        "costo": 30000
+      }
+    ]
   },
   {
     "_id": 3,
@@ -158,9 +187,27 @@
       "toallas",
       "caja",
       "electrodomesticos",
-      "lavarropas"
+      "lavarropas",
+      "juego de mesa"
     ],
-    "precio": 20000
+    "precio": [
+      {
+        "ocupantes": 2,
+        "costo": 30000
+      },
+      {
+        "ocupantes": 3,
+        "costo": 35000
+      },
+      {
+        "ocupantes": 5,
+        "costo": 38000
+      },
+      {
+        "ocupantes": 6,
+        "costo": 40000
+      }
+    ]
   },
   {
     "_id": 4,
@@ -189,7 +236,17 @@
       "https://imgur.com/nHNkSQ3",
       "https://imgur.com/kJxtu38"
     ],
-    "comodidades": [],
+    "comodidades": [
+      "pava",
+      "microondas",
+      "cocina",
+      "aire",
+      "juego de mesa",
+      "parking",
+      "tv",
+      "wifi",
+      "parrilla"
+    ],
     "precio": 10000
   }
 ]
