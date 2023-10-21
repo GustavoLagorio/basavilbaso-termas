@@ -6,7 +6,6 @@
   .termas_main_titulo {
     width: 100%;
     height: 50vh;
-    background-image: url(../assets/predio1.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,6 +25,11 @@
     margin: 5%;
     text-align: center;
   }
+
+  .termas_main_list_actividad .actividad_desc {
+    display: flex;
+    flex-flow: column nowrap;
+  }
   
   .termas_main_list_actividad .actividad_desc h2 {
     color: #254b5e;
@@ -33,7 +37,7 @@
   }
   
   .termas_main_list_actividad .actividad_desc h3 {
-    margin: 1rem;
+    margin: 2rem;
     font-size: 1.5rem;
   }
   
@@ -56,25 +60,56 @@
   @media (min-width: 768px) {
     .termas_main_list {
       width: 90%;
-      display: flex;
-      flex-flow: row wrap;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 45vh 45vh 45vh;
+      grid-template-areas: 
+      "quienes termales"
+      "piscinas resto"
+      "regionales instalaciones";
       margin: 10% 5%;
+    }
+
+    .quienes {
+      grid-area: quienes;
+    }
+
+    .termales {
+      grid-area:  termales;
+    }
+
+    .piscinas {
+      grid-area: piscinas;
+    }
+
+    .resto {
+      grid-area: resto;
+    }
+
+    .regionales {
+      grid-area: regionales;
+    }
+
+    .instalaciones {
+      grid-area: instalaciones;
     }
   
     .termas_main_list_actividad {
       display: flex;
       flex-flow: row nowrap;
-      width: 50%;
+      width: 100%;
+      height: 100%;
       margin: 0;
       align-items: center;
     }
   
     .termas_main_list_actividad .actividad_desc {
-      width: 100%;
+      width: 50%;
+      height: 100%;
     }
   
     .termas_main_list_actividad .actividad_imagen {
-      width: 100%;
+      width: 50%;
       height: 100%;
     }
   
@@ -89,6 +124,15 @@
   }
   
   @media (min-width: 1200px) {
+    
+    .termas_main_titulo{
+      height: 60vh;
+    }
+
+    .termas_main_titulo h1{
+      font-size: 3rem;
+    }
+
     .termas_main_list {
       width: 100%;
       margin: 5% 0;

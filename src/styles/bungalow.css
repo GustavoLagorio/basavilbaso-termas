@@ -11,13 +11,21 @@
     background-repeat: no-repeat;
 }
 
+.bungalow_main_titulo_opacidad {
+    width: 100%;
+    height: 50vh;
+    background-color: #33333371;
+
+}
+
 .bungalow_main_titulo h1 {
     font-style: italic;
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: bold;
     background: none;
     color: #f1e6d2;
-    padding: 10% 0 0 5%;
+    padding: 20% 0 0 5%;
+    text-shadow: 2px 2px 2px #254b5e;
 }
 
 .bungalow_main .swiper {
@@ -89,7 +97,7 @@ h2 {
     justify-content: space-evenly;
 }
 
-.bungalow_main_form h3 {
+.bungalow_main_form h2 {
     text-align: center;
     background: none;
     margin-bottom: 2rem;
@@ -97,11 +105,15 @@ h2 {
 
 .nombre, .nombre input, .apellido, .apellido input,
 .email, .email input, .dni, .dni input{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bolder;
     height: 2rem;
     width: 50%;
     margin-bottom: 1rem;
+}
+
+input::placeholder {
+    font-size: 1rem;
 }
 
 label.ocupantes {
@@ -113,6 +125,7 @@ select.ocupantes {
     height: 2rem;
     width: 2rem;
     font-size: 1.2rem;
+    border-radius: 0.5rem;
 }
 
 .nombre, .apellido, .email, .dni {
@@ -135,15 +148,59 @@ select.ocupantes {
 .precio .separador {
     height: 1px;
     background-color: #333333;
-    width: 50%;
-    margin: 0 25%;
+    width: 40%;
+    margin: 0 30%;
 }
 
 .terminos {
     margin: 3rem 0;
 }
 
+.total {    
+    background-color: #4697b4;
+}
+
+.total p {
+    background-color: #4697b4;
+    margin-bottom: 0.2rem;
+    font-size: 1.3rem;
+}
+
+.total .separador {
+    height: 0.2rem;
+    width: 40%;
+    margin: 0 30% 1rem 30%;
+    background-color: #254b5e;
+}
+
+.terminos ul {
+    list-style: circle;
+    margin-left: 2rem;
+    padding: 0 0.5rem;
+}
+
+.terminos ul li {
+    margin: 0.5rem 0;
+}
+
+.ubicacion {
+    margin: 2rem;
+}
+
+img.swal2-image {
+    margin: 0;
+}
+
+.custom-popup{
+    padding: 0;
+    width: 70%;
+}
+
 @media (min-width: 768px) {
+
+    .bungalow_main_titulo h1 {
+        font-size: 5rem;
+    }
     
     .bungalow_main .swiper {
         width: 60%;
@@ -159,11 +216,37 @@ select.ocupantes {
         width: 80%;
         margin: auto 10%;
     }
+    
+    .custom-popup{
+        padding: 0;
+        width: 50%;
+    }
+
+    img.swal2-image {
+        width: 100%;
+    }
 }
 
 @media (min-width: 992px) {
     .bungalow_main_form_usuario {
         width: 60%;
         margin: auto 20%;
+    }
+
+    .precio .separador {
+        width: 30%;
+        margin: 0 35%;
+    }
+
+    .total .separador {
+        width: 30%;
+        margin: 0 35% 1rem 35%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .bungalow_main .swiper {
+        width: 40%;
+        margin: 3rem 30%;
     }
 }

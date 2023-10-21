@@ -39,7 +39,7 @@ function Calendario({ onFechasSeleccionadas, token }) {
   };
 
   //Declaramos como today el dia de la fecha mas 2 dias para esperar acreditacion del pago de reserva
-  const today = addDays(startOfDay(new Date()), 3);
+  const today = addDays(startOfDay(new Date()), 0);
 
   const maxDate = addYears(today, 1); // Calcula la fecha máxima (1 año a partir de hoy)
 

@@ -41,9 +41,12 @@
     height: 100%;
 }
 
-.rdrDateDisplayWrapper .rdrDateDisplay input {
+.rdrDateDisplayWrapper .rdrDateDisplay .rdrDateInput input {
+
     margin-top: 0;
     color: #333333;
+    background-color: #f1e6d2;
+
 }
 
 .rdrMonthAndYearWrapper button {

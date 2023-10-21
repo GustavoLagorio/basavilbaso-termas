@@ -233,3 +233,34 @@ const listaBungalows = [
 ]
 
 export default listaBungalows
+
+
+
+
+/*inmueble2
+
+https://imgur.com/3YAGQPL.jpg
+
+lamery
+
+https://imgur.com/fahZuCU.jpg
+
+añil
+
+https://imgur.com/sitDOMS.jpg
+
+4estaciones
+
+https://imgur.com/traRgEr.jpg
+
+añil2
+
+https://imgur.com/SMPj2fA.jpg
+
+latorcaza
+
+https://imgur.com/XaPu7z4.jpg
+
+inmueble3
+
+https://imgur.com/gCgPDI8.jpg*/

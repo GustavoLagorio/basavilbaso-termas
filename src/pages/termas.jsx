@@ -1,88 +1,93 @@
+import imagenes from '../../imagenes.json';
+
 import '../styles/termas.css'
 
 const Termas = () => {
+
+  const imagenesTermas = imagenes[0].termas
+
   return (
     <main className="termas_main" id="termas">
-      <div className="termas_main_titulo">
+      <div className="termas_main_titulo" style={{ backgroundImage: `url(${imagenesTermas[0]})` }}>
         <h1>Termas Basavilbaso</h1>
       </div>
       <div className="termas_main_list">
-        <div className="termas_main_list_actividad invertido">
+        <div className="termas_main_list_actividad invertido quienes">
           <div className="actividad_desc">
             <h2>01</h2>
             <h3>Quiénes Somos</h3>
-            <p>Termas Basavilbaso es un complejo de aguas termales y bungalows, diseñado para disfrutar
-              y descansar en un entorno natural. Consta de 54 hectáreas con el objetivo de entrar en
-              contacto con la naturaleza, para divertirse y también relajarse.
+            <p>"Amanecer en Termas" ofrece lujosos bungalows en las Termas Basavilbaso, donde el confort se encuentra 
+              con la naturaleza. Garantizamos descanso y la oportunidad de sumergirse en las termas.
             </p>
           </div>
           <div className="actividad_imagen">
-            <img src="assets/termas6.jpg" alt="" />
+            <img src={imagenesTermas[1]} alt="" />
           </div>
         </div>
-        <div className="termas_main_list_actividad invertido" >
+        <div className="termas_main_list_actividad invertido termales" >
           <div className="actividad_desc">
             <h2>02</h2>
             <h3>Aguas Termales</h3>
             <p>
-              Termas Basavilbaso cuenta con dos piscinas de aguas termales. Estas emergen desde el corazón de
-              la tierra a una profundidad de 1256 metros y alcanzan los 42°C en la superficie. Se diferencian
-              de otras termas por ser de agua salada, lo que les otorga propiedades y beneficios únicos.
+              Termas Basavilbaso cuenta con dos piscinas termales de agua salada, con temperaturas de 42°C, ofreciendo
+              propiedades únicas y especiales para una experiencia relajante y revitalizante.
             </p>
           </div>
           <div className="actividad_imagen">
-            <img src="assets/termas10.jpeg" alt="" />
+            <img src={imagenesTermas[2]} alt="" />
           </div>
         </div>
-        <div className="termas_main_list_actividad">
+        <div className="termas_main_list_actividad piscinas">
           <div className="actividad_desc">
             <h2>03</h2>
             <h3>Piscinas</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est consequatur veniam doloribus quam 
-              alias hic facilis recusandae quibusdam deleniti. Ea fuga id adipisci deleniti delectus odio ad 
-              a at maiores!</p>
+            <p>
+            Termas Basavilbaso no solo ofrece aguas termales rejuvenecedoras, sino que además también cuenta con piscinas 
+            para todas las edades, proporcionando una experiencia completa y variada para los visitantes.
+            </p>
           </div>
           <div className="actividad_imagen">
-            <img src="assets/termas9.jpg" alt="" />
+            <img src={imagenesTermas[3]} alt="" />
           </div>
         </div>
-        <div className="termas_main_list_actividad">
+        <div className="termas_main_list_actividad resto">
           <div className="actividad_desc">
             <h2>04</h2>
             <h3>Gastronomía</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est consequatur veniam doloribus quam 
-              alias hic facilis recusandae quibusdam deleniti. Ea fuga id adipisci deleniti delectus odio ad 
-              a at maiores!
+            <p>
+              Las instalaciones, cuentan con un  restaurante con espacio para 80 comensales. Disfruta de sus platos
+              mientras te relajas en las termas.
             </p>
           </div>
           <div className="actividad_imagen">
-            <img src="assets/termas3.jpg" alt="" />
+            <img src={imagenesTermas[4]} alt="" />
           </div>
         </div>
-        <div className="termas_main_list_actividad invertido">
+        <div className="termas_main_list_actividad invertido regionales">
           <div className="actividad_desc">
             <h2>05</h2>
             <h3>Regionales</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est consequatur veniam doloribus quam 
-              alias hic facilis recusandae quibusdam deleniti. Ea fuga id adipisci deleniti delectus odio ad 
-              a at maiores!
+            <p>
+              Explora Basavilbaso con nuestros productos regionales exclusivos, ideales para disfrutar en las termas o
+              regalar. Sumergite en la auténtica experiencia de Basavilbaso con nuestras opciones cuidadosamente
+              seleccionadas.
             </p>
           </div>
           <div className="actividad_imagen">
             <img src="assets/termas6.jpg" alt="" />
           </div>
         </div>
-        <div className="termas_main_list_actividad invertido">
+        <div className="termas_main_list_actividad invertido instalaciones">
           <div className="actividad_desc">
             <h2>06</h2>
             <h3>Instalaciones</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est consequatur veniam doloribus quam 
-              alias hic facilis recusandae quibusdam deleniti. Ea fuga id adipisci deleniti delectus odio ad 
-              a at maiores!
+            <p>
+              Termas Basavilbaso ofrece instalaciones completas que incluyen baños, duchas, senderos para ciclistas y áreas para
+              observar la flora y fauna, proporcionando a los visitantes una experiencia turística enriquecedora y cómoda.
             </p>
           </div>
           <div className="actividad_imagen">
-            <img src="assets/termas6.jpg" alt="" />
+            <img src={imagenesTermas[5]} alt="" />
           </div>
         </div>
       </div>

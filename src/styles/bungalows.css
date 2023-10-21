@@ -5,7 +5,6 @@
   .bungalows_main_titulo {
     width: 100%;
     height: 50vh;
-    background-image: url(../assets/predio1.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; }
@@ -124,3 +123,15 @@
       height: 100%;
       margin: 0;
       width: 100%; } }
+
+      @media (min-width: 1200px) {
+
+        .bungalows_main_titulo{
+          height: 60vh;
+          background-position: center center;
+        }
+      
+        .bungalows_main_titulo h1{
+          font-size: 3rem;
+        }
+      }

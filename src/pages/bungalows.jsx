@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import BungalowsList from "../componentes/bungalows-list";
 import CalendarioGeneral from "../componentes/CalendarioGeneral";
+import imagenes from '../../imagenes.json';
 
 import "../styles/bungalows.css";
 
 const Bungalows = () => {
+
+    const imagenesBungalows = imagenes[0].bungalows
 
     //Estado para obtener el token
     const [token, setToken] = useState(null)
@@ -54,10 +57,6 @@ const Bungalows = () => {
         obtenerTokenCliente()
 
     }, []);//Argumento vacio para que se ejecute una vez al ejecutar el componente
-
-
-
-
 
     //Obtenemos los bungalows y reservas enviando el token en el header
     useEffect(() => {
@@ -117,8 +116,6 @@ const Bungalows = () => {
 
     // Función para manejar el rango de fechas seleccionado
     const handleRangeSelected = (rangoSeleccionado, fechasReservadas) => {
-        console.log(rangoSeleccionado, fechasReservadas)
-
 
         const listaBungalowsFiltrados = []
 
@@ -134,41 +131,32 @@ const Bungalows = () => {
             }
         }
 
-        console.log(listaBungalowsFiltrados);
-
         setBungalowslist(listaBungalowsFiltrados)
-
-
 
     };
 
     const handleFiltrarSubmit = async (e) => {
-        console.log(bungalowsList);
-        console.log(bungalows);
 
         e.preventDefault();
 
-        if (bungalowsList) {
+        if (bungalowsList.length > 0) {
 
-            const bungalowsSubmit= []
+            console.log(bungalowsList)
+            console.log(bungalows);
 
-        bungalows.map((bungalow, index) => {
+            const bungalowsSubmit = bungalows.filter(bungalow => {
 
-            if (bungalow.idBungalow === bungalowsList[index]) {
+                return bungalowsList.includes(bungalow.idBungalow);
+                
+            });
 
-                bungalowsSubmit.push(bungalow)
-            }
-        })
-
-        console.log(bungalowsSubmit);
-        setListaBungalowsRenderizar(bungalowsSubmit)
-
+            setListaBungalowsRenderizar(bungalowsSubmit)
         }
 
     }
     return (
         <main className="bungalows_main" id="bungalows">
-            <div className="bungalows_main_titulo">
+            <div className="bungalows_main_titulo" style={{ backgroundImage: `url(${imagenesBungalows[0]})` }}>
                 <h1>Bungalows</h1>
             </div>
             <form className="bungalows_main_filtro" onSubmit={handleFiltrarSubmit}>

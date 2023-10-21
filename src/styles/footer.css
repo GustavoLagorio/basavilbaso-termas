@@ -149,6 +149,34 @@ footer .footer_redes_list {
   margin: 1rem;
 }
 
+.footer_devs {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw !important;
+  margin: 0 !important;
+  height: 5rem;
+}
+
+.footer_devs span {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+footer .autor_logo {
+  height: 40%;
+  align-self: center;
+}
+
+.footer_devs span a {
+  width: 100%;
+  height: 100%;
+}
+
+.footer_devs span img {  
+  height: 100%;
+}
+
 @media (min-width: 768px) {
 
   footer .footer_ubicacion {
@@ -231,6 +259,15 @@ footer .footer_logo p:last-child {
   font-size: 0.8rem;
 }
 
+.footer_devs {  
+  margin: 0rem 20%;
+  width: 60%;
+}
+
+.autor_logo {
+  height: 80%;
+}
+
 @media (min-width: 1200px) {
 
   .footer_redes_list {
@@ -245,5 +282,14 @@ footer .footer_logo p:last-child {
   .footer_redes_list li a, .footer_redes_list li img {
 
     width: 100%;
+  }
+
+  .footer_devs {  
+    margin: 0rem 30%;
+    width: 40%;
+  }
+
+  .footer_devs span {
+    font-size: 1rem;
   }
 }

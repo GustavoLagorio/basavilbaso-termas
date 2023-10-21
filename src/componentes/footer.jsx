@@ -1,24 +1,38 @@
-import "../styles/footer.css";
 import { Link } from "react-router-dom";
+import imagenes from '../../imagenes.json';
+
+import "../styles/footer.css";
 
 export default function Footer() {
+
+  const imagenesFooter = imagenes[0].footer
+
+  const handleContacto = () => {
+
+    const telefono = import.meta.env.VITE_API_CONTACTO
+    console.log(telefono);
+
+    const enlaceWhatsApp = `https://wa.me/${telefono}`;
+
+    // Abrir WhatsApp en una nueva ventana o pestaña
+    window.open(enlaceWhatsApp);
+
+  }
   return (
     <footer id="contacto">
       <div className="footer_ubicacion">
         <h2>Ubicación</h2>
         <div className="footer_ubicacion_contacto">
           <h3>Contacto</h3>
-          <p>Direccion lsdasd 449615</p>
+          <p>Dirección: Km 93 Ruta 20 Basavilbaso Entre Rios</p>
           <img src="/assets/icons/call.png" alt="telefono" />
-          <p>Teléfono 4161.</p>
-          <img src="/assets/icons/mail.png" alt="email" />
-          <p>Email: sdouasdo@ohasod.com</p>
-          <a href="./docs/contacto.html" className="btn-accion">
+          <p>Teléfono: +54-113124-1195.</p>
+          <button className="btn-accion" onClick={handleContacto}>
             Contactanos
-          </a>
+          </button>
         </div>
         <div className="footer_ubicacion_mapa">
-          <img src="../assets/mapa-final.png" alt="" />
+          <img src={imagenesFooter[0]} alt="" />
         </div>
         <div className="footer_ubicacion_rutas">
           <h3>Como llegar</h3>
@@ -83,10 +97,13 @@ export default function Footer() {
           </li>
         </ul>
       </div>
+      <div className="footer_separador"></div>
       <div className="footer_devs">
-        <span>empresa</span>
-        <span>
-          <img src="#" alt="logo empresa" />
+        <span className="autor">
+          <p>© Helios 2023</p>
+          </span>
+        <span className="autor_logo">
+          <Link><img src={imagenesFooter[1]} alt="Helios Web Desing" /></Link>          
         </span>
       </div>
     </footer>

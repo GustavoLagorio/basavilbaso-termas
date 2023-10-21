@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { Comodidades } from "../componentes/comodidades";
 import { useEffect, useState } from 'react';
 import { format, differenceInDays, parseISO, endOfDay } from 'date-fns';
+import Swal from 'sweetalert2';
 
 import "../styles/bungalow.css"
 import "../styles/calendario.css"
@@ -190,6 +191,32 @@ export function Bungalow() {
 
   }
 
+  const handleUbicacion = () => {
+
+    const screenHeight = window.innerHeight;
+    const modalHeight = screenHeight * 0.7;
+    console.log(screenHeight);
+
+    Swal.fire({
+      imageUrl: bungalow.ubicacion,
+      imageAlt: 'Ubicacion del Bungalow',
+      background: '#4697b4',
+      showConfirmButton: false,
+      customClass: {
+        popup: 'custom-popup',
+        content: 'custom-content',
+        confirmButton: 'btn-custom'
+      },
+      heightAuto: false,
+      onOpen: () => {
+        // Aplica estilos personalizados al contenido del modal
+        const modalContent = document.querySelector('.custom-content');
+        modalContent.style.maxHeight = modalHeight + 'px';
+        modalContent.style.overflowY = 'auto';
+      }
+    })
+  }
+
   if (!isLoading) {
     console.log(formulario.ocupantes);
     console.log(formulario.noches);
@@ -197,7 +224,9 @@ export function Bungalow() {
     return (
       <main className="bungalow_main">
         <div className="bungalow_main_titulo" style={{ backgroundImage: `url(${bungalow.galeria[0]})` }}>
-          <h1>{bungalow.nombre}</h1>
+          <div className="bungalow_main_titulo_opacidad">
+            <h1>{bungalow.nombre}</h1>
+          </div>
         </div>
         <BungalowCarousel imagenes={bungalow.galeria} />
         <h2>Servicios y características</h2>
@@ -210,12 +239,29 @@ export function Bungalow() {
             </div>
           ))}
         </div>
+        <div className="ubicacion">
+          <button className="btn-accion" onClick={handleUbicacion}>Ubicación</button>
+        </div>
         <div className="terminos">
-        <h2>Condiones de reserva</h2>
-        <p>Las condiciones son:</p>
+          <h2>Condiones de reserva</h2>
+          <p>Las condiciones son:</p>
+          <ul>
+            <li>
+              Check-in: 10:00 hs.
+            </li>
+            <li>
+              Check-out: 10:00 hs.
+            </li>
+            <li>
+              Formas de pago: 50% por transferencia bancaria para confirmar reserva y el resto al llegar al bungalow.
+            </li>
+            <li>
+              No se admiten mascotas.
+            </li>
+          </ul>
         </div>
         <form action="" className="bungalow_main_form" onSubmit={handleSubmint}>
-          <h3>Completa con tus datos para reservar</h3>
+          <h2>Completa con tus datos para reservar</h2>
           <div className="bungalow_main_form_usuario">
             <label htmlFor="nombre" className="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" onChange={handleInputChange} required placeholder="Ingresa tu Nombre" />
@@ -232,7 +278,10 @@ export function Bungalow() {
             token={token}
             onFechasSeleccionadas={handleFechasSeleccionadas}
           />
-          <p>Total a pagar: ${total}</p>
+          <div className="total">
+            <p>Total a pagar: ${total}</p>
+            <div className="separador"></div>
+          </div>
           <button type="submit" className="btn-accion">Reservar</button>
         </form>
       </main>

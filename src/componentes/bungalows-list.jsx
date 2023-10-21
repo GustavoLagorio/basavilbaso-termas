@@ -2,8 +2,7 @@ import { HashLink } from 'react-router-hash-link';
 
 export default function BungalowsList({ listaBungalows, listaBungalowsRenderizar }) {
 
-    const bungalowsToRender = listaBungalowsRenderizar ?? listaBungalows;
-    
+    const bungalowsToRender = listaBungalowsRenderizar ?? listaBungalows;    
 
     return (
         <div>

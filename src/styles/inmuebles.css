@@ -6,7 +6,6 @@
 .inmuebles_main_titulo {
     width: 100%;
     height: 50vh;
-    background-image: url(../assets/bungalow3.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,9 +57,44 @@
     margin: 1rem 5%;
 }
 
+img.swal2-image {
+    margin: 0;
+}
+
+.desc ul {
+    margin: 2rem 10%;
+    list-style: circle;
+}
+
+.desc ul li {
+    margin: 0.5rem 0;
+}
+
+.desc p:last-child {
+    font-size: 1rem;
+}
+
 @media (min-width: 768px) {
     .swiper {
         width: 60%;
         margin: 3rem 20%;
     }
+}
+
+@media (min-width: 1200px) {
+
+    .inmuebles_main_titulo{
+      height: 60vh;
+      background-position: center bottom;
+    }
+  
+    .inmuebles_main_titulo h1{
+      font-size: 3rem;
+    }    
+
+    .inmuebles_main .swiper {
+        width: 40%;
+        margin: 3rem 30%;
+    }
+
 }

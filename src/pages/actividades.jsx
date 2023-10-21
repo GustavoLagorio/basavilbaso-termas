@@ -1,9 +1,14 @@
+import imagenes from '../../imagenes.json';
+
 import "../styles/actividades.css";
 
 const Actividades = () => {
+
+  const imagenesActividades = imagenes[0].actividades
+  
   return (
     <main className="actividades_main" id="actividades">
-      <div className="actividades_main_titulo">
+      <div className="actividades_main_titulo" style={{ backgroundImage: `url(${imagenesActividades[0]})` }}>
         <h1>Actividades</h1>
       </div>
       <div className="actividades_main_list">
@@ -16,7 +21,7 @@ const Actividades = () => {
               Conexión con naturaleza y calidez local..</p>
           </div>
           <div className="actividad_imagen">
-            <img src="assets/actividades6.jpg" alt="" />
+            <img src={imagenesActividades[1]} alt="" />
           </div>
         </div>
         <div className="actividades_main_list_actividad invertido" >
@@ -29,7 +34,7 @@ const Actividades = () => {
               renacentista italiana en amplia estancia.</p>
           </div>
           <div className="actividad_imagen">
-            <img src="assets/actividades10.jpeg" alt="" />
+            <img src={imagenesActividades[2]} alt="" />
           </div>
         </div>
         <div className="actividades_main_list_actividad">
@@ -41,7 +46,7 @@ const Actividades = () => {
               mbohanes. Doble historia: Ramírez y Urquiza. Leyenda de Calá persiste.</p>
           </div>
           <div className="actividad_imagen">
-            <img src="assets/actividades9.jpg" alt="" />
+            <img src={imagenesActividades[3]} alt="" />
           </div>
         </div>
         <div className="actividades_main_list_actividad">
@@ -54,7 +59,7 @@ const Actividades = () => {
             </p>
           </div>
           <div className="actividad_imagen">
-            <img src="assets/actividades3.jpg" alt="" />
+            <img src={imagenesActividades[4]} alt="" />
           </div>
         </div>
       </div>

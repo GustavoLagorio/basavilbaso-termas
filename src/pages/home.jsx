@@ -1,9 +1,14 @@
 import HomeCarousel from "../componentes/home-carousel";
 import { HashLink } from "react-router-hash-link";
+import imagenes from '../../imagenes.json';
 
 import "../styles/home.css";
 
+
 export default function Body() {
+  
+  const imagenesHome = imagenes[0].home
+
   return (
     <main className="home_main" id="home">
       <div className="reservas">
@@ -11,7 +16,7 @@ export default function Body() {
           Reservar
         </HashLink>
       </div>
-      <div className="home_main_titulo">
+      <div className="home_main_titulo" style={{ backgroundImage: `url(${imagenesHome[0]})` }}>
         <div className="home_main_titulo_text">
           <p>Termas &</p>
           <p className="txt-bungalows">Bungalows</p>
@@ -36,17 +41,17 @@ export default function Body() {
         <h3>Termas Basavilbaso</h3>
         <div className="home_main_predio_imagenes">
           <div className="predio_imagen primera">
-            <img src="assets/predio1.jpg" alt="" />
+            <img src={imagenesHome[5]} alt="" />
           </div>
           <div className="predio_imagen imagen1">
-            <img src="assets/predio2.jpg" alt="" />
+            <img src={imagenesHome[6]} alt="" />
           </div>
           <div className="predio_imagen imagen2">
-            <img src="assets/predio3.jpg" alt="" />
+            <img src={imagenesHome[7]} alt="" />
           </div>
         </div>
       </div>
-      <div className="home_main_desc">
+      <div className="home_main_desc" style={{ backgroundImage: `url(${imagenesHome[8]})` }}>
         <div className="predio_desc">
           <h3>Acerca del predio</h3>
           <p>
