@@ -50,7 +50,7 @@
     background-color: #a7d0d2;
   }
     .bungalows_main_list_bungalow h2 {
-      margin: 1rem 0; }
+      margin: 0; }
     .bungalows_main_list_bungalow_imagenes {
       width: 95%;
       height: auto;
@@ -114,7 +114,8 @@
       padding: 2rem 0 0 2rem; }
     .bungalows_main_list_bungalow p {
       grid-area: p;
-      padding: 2rem; }
+      padding: 1rem;
+    margin: 2rem 0; }
     .bungalows_main_list_bungalow a {
       grid-area: btn;
       margin: 0 0 0 2rem; }

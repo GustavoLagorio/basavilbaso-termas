@@ -74,7 +74,7 @@ const Termas = () => {
             </p>
           </div>
           <div className="actividad_imagen">
-            <img src="assets/termas6.jpg" alt="" />
+            <img src={imagenesTermas[5]} alt="" />
           </div>
         </div>
         <div className="termas_main_list_actividad invertido instalaciones">
@@ -87,7 +87,7 @@ const Termas = () => {
             </p>
           </div>
           <div className="actividad_imagen">
-            <img src={imagenesTermas[5]} alt="" />
+            <img src={imagenesTermas[6]} alt="" />
           </div>
         </div>
       </div>

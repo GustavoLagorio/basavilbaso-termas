@@ -66,14 +66,26 @@ h2 {
 }
 
 .bungalow_main_comodidades_list li {
-    width: 1rem;
-    height: 1rem;
-    margin: 0.5rem 0.25rem;
+    position: relative;
 }
 
-.bungalow_main_comodidades_list li img {
-    width: 100%;
-    height: 100%;
+.bungalow_main_comodidades_list li svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 1rem 0.5rem;
+}
+
+.bungalow_main_comodidades_list li .nombre_icono.oculto {    
+    display: none;
+}
+
+.bungalow_main_comodidades_list li .nombre_icono.visible {
+    background-color: #254b5e;
+    color: white;
+    display: block;
+    position: fixed;
+    z-index: +1;
+    text-align: center;
 }
 
 .bungalow_main p {
@@ -227,6 +239,8 @@ img.swal2-image {
     }
 }
 
+
+
 @media (min-width: 992px) {
     .bungalow_main_form_usuario {
         width: 60%;
@@ -245,6 +259,20 @@ img.swal2-image {
 }
 
 @media (min-width: 1200px) {
+
+    .bungalow_main_titulo {
+        height: 60vh;    
+        background-position: center 90%;
+    }
+
+    .bungalow_main_titulo_opacidad {
+        height: 60vh;
+    }
+
+    .bungalow_main_titulo h1 {
+        padding: 10% 0 0 5%;
+    }
+
     .bungalow_main .swiper {
         width: 40%;
         margin: 3rem 30%;

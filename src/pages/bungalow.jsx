@@ -218,8 +218,6 @@ export function Bungalow() {
   }
 
   if (!isLoading) {
-    console.log(formulario.ocupantes);
-    console.log(formulario.noches);
 
     return (
       <main className="bungalow_main">

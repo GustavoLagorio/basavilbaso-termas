@@ -39,15 +39,15 @@ footer .footer_ubicacion_rutas p {
   margin-bottom: 1rem;
 }
 
-footer .footer_ubicacion_contacto img,
-footer .footer_ubicacion_contacto img,
-footer .footer_ubicacion_rutas h3 img,
-footer .footer_ubicacion_rutas img {
+footer .footer_ubicacion_contacto svg,
+footer .footer_ubicacion_rutas h3 svg,
+footer .footer_ubicacion_rutas svg {
   background: none;
 }
 
-.footer_ubicacion_contacto img {
-  width: 1.1rem;
+.footer_ubicacion_contacto svg {
+  width: 2rem;
+  height: 2rem;
   align-self: center;
 }
 

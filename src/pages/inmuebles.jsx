@@ -21,7 +21,6 @@ const Inmueble = () => {
     Swal.fire({
       imageUrl: imagen,
       imageHeight: '100%',
-      imageWidth: '100%',
       imageAlt: 'Ubicacion del Inmueble',
       background: '#4697b4',
       showConfirmButton: false,
@@ -31,13 +30,13 @@ const Inmueble = () => {
         confirmButton: 'btn-custom'
       },
       heightAuto: false,
-      didOpen: () => {
+      willOpen: () => {
         // Aplica estilos personalizados al contenido del modal después de que se ha mostrado
-        const modalContent = document.querySelector('.custom-content');
+        const modalContent = document.querySelector('.swal2-content');
+        const screenHeight = window.innerHeight;
+        const maxModalHeight = screenHeight * 0.6;
         if (modalContent) {
-          const screenHeight = window.innerHeight;
-          const modalHeight = screenHeight * 0.7;
-          modalContent.style.maxHeight = modalHeight + 'px';
+          modalContent.style.maxHeight = maxModalHeight + 'px';
           modalContent.style.overflowY = 'auto';
         }
       }

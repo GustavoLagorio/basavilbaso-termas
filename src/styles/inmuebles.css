@@ -97,4 +97,13 @@ img.swal2-image {
         margin: 3rem 30%;
     }
 
+    .inmuebles_main .swal2-container .custom-popup {
+        height: 60vh;
+        width: 40vw;
+    }
+
+    .custom-content {
+        height: 100%;
+    }
+
 }
