@@ -45,7 +45,7 @@ export default function Header() {
               <HashLink to="/actividades#header" onClick={() => activarEnlace("actividades")}>Actividades</HashLink>
             </li>
             <li className="list_item">
-              <HashLink to="#contacto">Contacto</HashLink>
+              <HashLink to="#contacto" onClick={activar}>Contacto</HashLink>
             </li>
             <li className={activo === "termas" ? "list_item activo" : "list_item"}>
               <HashLink to="/termas#header" onClick={() => activarEnlace("termas")}>Termas</HashLink>

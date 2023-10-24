@@ -21,7 +21,7 @@ export default function BungalowsList({ listaBungalows, listaBungalowsRenderizar
                                 <img key={i} src={imagen} alt={`Imagen ${i}`} />
                             ))}
                         </div>
-                        <HashLink to={`/bungalows/${bungalow.idBungalow}#header`} className='btn-accion'>Reservar</HashLink>
+                        <HashLink to={`/bungalows/${bungalow.idBungalow}#header`} className='btn-accion'>Ver más</HashLink>
                     </div>)
             })}
         </div>

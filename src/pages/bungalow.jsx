@@ -3,7 +3,7 @@ import BungalowCarousel from "../componentes/bungalow-carousel";
 import { useParams } from "react-router-dom";
 import { Comodidades } from "../componentes/comodidades";
 import { useEffect, useState } from 'react';
-import { format, differenceInDays, parseISO, endOfDay } from 'date-fns';
+import { format, differenceInDays } from 'date-fns';
 import Swal from 'sweetalert2';
 
 import "../styles/bungalow.css"
@@ -38,7 +38,10 @@ export function Bungalow() {
     noches: 0
   });
 
-  const [total, setTotal] = useState(0)
+  const [total, setTotal] = useState(0);
+
+  const [checkIn, setCheckIn] = useState('');
+  const [checkOut, setCheckOut] = useState('');
 
 
   // Realizar una solicitud al servidor para obtener el token
@@ -158,6 +161,26 @@ export function Bungalow() {
 
   useEffect(() => {
 
+    if (parseInt(id) === 4) {
+
+      const ingreso = '13:00';
+      const out = '10:00';
+      setCheckIn(ingreso);
+      setCheckOut(out);
+
+    } else {
+      const ingreso = '10:00';
+
+      const out = '10:00';
+      setCheckIn(ingreso);
+      setCheckOut(out);
+
+    }
+
+  }, [id])
+
+  useEffect(() => {
+
     if (formulario.noches > 0) {
 
       // Encontrar el objeto precio correspondiente a la cantidad de ocupantes seleccionada
@@ -236,10 +259,10 @@ export function Bungalow() {
           <p>Las condiciones son:</p>
           <ul>
             <li>
-              Check-in: 10:00 hs.
+              Check-in: {checkIn} hs.
             </li>
             <li>
-              Check-out: 10:00 hs.
+              Check-out: {checkOut} hs.
             </li>
             <li>
               Formas de pago: 50% por transferencia bancaria para confirmar reserva y el resto al llegar al bungalow.
