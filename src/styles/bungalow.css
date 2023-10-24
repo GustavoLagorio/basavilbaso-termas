@@ -25,7 +25,6 @@
     background: none;
     color: #f1e6d2;
     padding: 20% 0 0 5%;
-    text-shadow: 2px 2px 2px #254b5e;
 }
 
 .bungalow_main .swiper {
@@ -201,11 +200,16 @@ select.ocupantes {
 
 img.swal2-image {
     margin: 0;
+    width: auto !important;
+    height: auto;
+    object-position: center center;
 }
 
-.custom-popup{
+.custom-popup {
     padding: 0;
-    width: 70%;
+    max-width: 80%;
+    height: auto;
+    width: max-content !important;
 }
 
 @media (min-width: 768px) {
@@ -261,12 +265,12 @@ img.swal2-image {
 @media (min-width: 1200px) {
 
     .bungalow_main_titulo {
-        height: 60vh;    
+        height: 70vh;    
         background-position: center 90%;
     }
 
     .bungalow_main_titulo_opacidad {
-        height: 60vh;
+        height: 70vh;
     }
 
     .bungalow_main_titulo h1 {

@@ -14,10 +14,6 @@ const Inmueble = () => {
 
   const handleUbicacion = (imagen) => {
 
-    const screenHeight = window.innerHeight;
-    const modalHeight = screenHeight * 0.7;
-    console.log(screenHeight);
-
     Swal.fire({
       imageUrl: imagen,
       imageHeight: '100%',
@@ -29,17 +25,7 @@ const Inmueble = () => {
         content: 'custom-content',
         confirmButton: 'btn-custom'
       },
-      heightAuto: false,
-      willOpen: () => {
-        // Aplica estilos personalizados al contenido del modal después de que se ha mostrado
-        const modalContent = document.querySelector('.swal2-content');
-        const screenHeight = window.innerHeight;
-        const maxModalHeight = screenHeight * 0.6;
-        if (modalContent) {
-          modalContent.style.maxHeight = maxModalHeight + 'px';
-          modalContent.style.overflowY = 'auto';
-        }
-      }
+      heightAuto: false      
     });
   }
 
@@ -68,7 +54,7 @@ const Inmueble = () => {
             <p>
               Venta de inmueble  “4 Estaciones”, dos bungalows de dos plantas amoblados, en Termas Basavilbaso.
             </p>
-            <p>Ubicación: Ruta Provincial N° 20.  Km 97 de la ciudad de Basavilbaso. Departamento Concepción del Uruguay. Pcia. Entre Ríos.</p>
+            <p>Ubicación: Ruta Provincial N° 20.  Km 93 de la ciudad de Basavilbaso. Departamento Concepción del Uruguay. Pcia. Entre Ríos.</p>
             <ul>
               <li>Lote 2 – Manzana 5.</li>
               <li>Superficie Terreno: 208 m<sup>2</sup>.</li>

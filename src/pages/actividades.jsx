@@ -40,7 +40,7 @@ const Actividades = () => {
         <div className="actividades_main_list_actividad">
           <div className="actividad_desc">
             <h2>03</h2>
-            <h3>Paraje Calá</h3>
+            <h3>Campamento Calá</h3>
             <p>Cercanos a la ciudad, restos de antiguo polvorín del XIX, campamento previo a Caseros. ONG
               "Amigos del Campamento Calá" lo restaura. Arroyo Calá, histórico Charrúa, relevante para indios
               mbohanes. Doble historia: Ramírez y Urquiza. Leyenda de Calá persiste.</p>

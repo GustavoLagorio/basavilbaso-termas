@@ -270,8 +270,10 @@ footer .footer_logo p:last-child {
 
 @media (min-width: 1200px) {
 
-  .footer_redes_list {
+  footer .footer_redes .footer_redes_list {
     height: 2rem;
+    width: 50%;
+    margin: 1rem 25%;
   }
 
   .footer_redes_list li {
@@ -279,7 +281,7 @@ footer .footer_logo p:last-child {
     width: 2rem;
   }
 
-  .footer_redes_list li a, .footer_redes_list li img {
+  .footer_redes_list li a, .footer_redes_list li svg {
 
     width: 100%;
   }

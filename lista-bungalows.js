@@ -227,7 +227,7 @@ const listaBungalows = [
         ],
         precio: [
             {
-                ocupantes: 3,
+                ocupantes: 2,
                 costo: 33000
             }
         ]

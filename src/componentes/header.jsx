@@ -24,7 +24,7 @@ export default function Header() {
     <header id="header">
       <nav className="nav">
         <div className="nav_logo">
-          <HashLink to="/#header">
+          <HashLink to="/#header" onClick={() => activarEnlace("home")}>
             <img src="/assets/logo.png" alt="Logo Amanecer en Termas" />
           </HashLink>
         </div>
@@ -45,7 +45,7 @@ export default function Header() {
               <HashLink to="/actividades#header" onClick={() => activarEnlace("actividades")}>Actividades</HashLink>
             </li>
             <li className="list_item">
-              <HashLink to="#contacto" onClick={() => activarEnlace("contacto")}>Contacto</HashLink>
+              <HashLink to="#contacto">Contacto</HashLink>
             </li>
             <li className={activo === "termas" ? "list_item activo" : "list_item"}>
               <HashLink to="/termas#header" onClick={() => activarEnlace("termas")}>Termas</HashLink>

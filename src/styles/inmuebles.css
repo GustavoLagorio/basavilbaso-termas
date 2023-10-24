@@ -59,6 +59,16 @@
 
 img.swal2-image {
     margin: 0;
+    width: auto !important;
+    height: auto;
+    object-position: center center;
+}
+
+.custom-popup {
+    padding: 0;
+    max-width: 80%;
+    height: auto;
+    width: max-content !important;
 }
 
 .desc ul {
@@ -84,7 +94,7 @@ img.swal2-image {
 @media (min-width: 1200px) {
 
     .inmuebles_main_titulo{
-      height: 60vh;
+      height: 70vh;
       background-position: center bottom;
     }
   

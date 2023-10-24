@@ -193,10 +193,6 @@ export function Bungalow() {
 
   const handleUbicacion = () => {
 
-    const screenHeight = window.innerHeight;
-    const modalHeight = screenHeight * 0.7;
-    console.log(screenHeight);
-
     Swal.fire({
       imageUrl: bungalow.ubicacion,
       imageAlt: 'Ubicacion del Bungalow',
@@ -207,13 +203,8 @@ export function Bungalow() {
         content: 'custom-content',
         confirmButton: 'btn-custom'
       },
-      heightAuto: false,
-      onOpen: () => {
-        // Aplica estilos personalizados al contenido del modal
-        const modalContent = document.querySelector('.custom-content');
-        modalContent.style.maxHeight = modalHeight + 'px';
-        modalContent.style.overflowY = 'auto';
-      }
+      heightAuto: false  
+          
     })
   }
 

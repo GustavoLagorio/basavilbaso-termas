@@ -90,8 +90,8 @@
 @media (min-width: 1200px) {
 
   .actividades_main_titulo{
-    height: 60vh;
-    background-position: center bottom;
+    height: 70vh;
+    background-position: center 80%;
   }
 
   .actividades_main_titulo h1{
