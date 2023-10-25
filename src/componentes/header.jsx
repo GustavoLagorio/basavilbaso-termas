@@ -45,7 +45,7 @@ export default function Header() {
               <HashLink to="/actividades#header" onClick={() => activarEnlace("actividades")}>Actividades</HashLink>
             </li>
             <li className="list_item">
-              <HashLink to="#contacto" onClick={activar}>Contacto</HashLink>
+              <HashLink to="#contacto" >Contacto</HashLink>
             </li>
             <li className={activo === "termas" ? "list_item activo" : "list_item"}>
               <HashLink to="/termas#header" onClick={() => activarEnlace("termas")}>Termas</HashLink>
@@ -57,7 +57,6 @@ export default function Header() {
         </div>
         <div className="nav_button">
           <button id="nav_toggle" onClick={activar}>
-            {/* imagen nav button */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="100%"
