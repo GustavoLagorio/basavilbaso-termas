@@ -1,4 +1,36 @@
 .error_main {
     position: relative;
     top: 10vh;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .error_main svg {
+   width: 90%;
+   object-position: center center;
+   object-fit: cover;
+   margin: 2rem 5%;
+  }
+
+  @media (min-width: 768px) {
+
+    .error_main {
+      height: 70vh;
+      width: auto;
+    }
+
+    .error_main svg {
+      width: 70%;
+      margin: 2rem 15%;
+    }
+
+  }
+
+  @media (min-width: 1200px) {
+
+    .error_main svg {
+      width: 40%;
+      margin: 2rem 30%;
+    }
+
   }

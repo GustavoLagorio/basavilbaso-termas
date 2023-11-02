@@ -30,14 +30,20 @@ export default function BungalowCarousel({ imagenes }) {
             }}
             loop={true}
         >
-            {imagenes.map((imagen) => (
-            
-                <SwiperSlide key={imagen}>
-                    <div className='swiper-zoom-container'>
-                         <img src={imagen} alt="" />
-                     </div>
-                 </SwiperSlide>
-            ))}            
+            {imagenes.map((imagen) => {
+                
+                    return (
+
+                        <SwiperSlide key={imagen}>
+                            <div className='swiper-zoom-container'>
+                                <img src={imagen} alt="Imagen del Bungalow" />
+                            </div>
+                        </SwiperSlide>
+
+                    )
+                }
+
+            )}
         </Swiper>
     );
 };

@@ -87,6 +87,11 @@ h2 {
     text-align: center;
 }
 
+.bungalow_main .video iframe{
+    width: 100vw;
+    height: calc(100vw/1.77);
+}
+
 .bungalow_main p {
     font-size: 1.2rem;
     text-align: center;
@@ -280,5 +285,11 @@ img.swal2-image {
     .bungalow_main .swiper {
         width: 40%;
         margin: 3rem 30%;
+    }
+
+    .bungalow_main .video iframe{
+        width: 80vw;
+        height: calc(80vw/1.77);
+        margin-left: 10vw;
     }
 }

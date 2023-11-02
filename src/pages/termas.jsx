@@ -21,7 +21,7 @@ const Termas = () => {
             </p>
           </div>
           <div className="actividad_imagen">
-            <img src={imagenesTermas[1]} alt="" />
+            <img src={imagenesTermas[1]} alt="Bungalows Amanecer en Termas" />
           </div>
         </div>
         <div className="termas_main_list_actividad invertido termales" >
@@ -34,7 +34,7 @@ const Termas = () => {
             </p>
           </div>
           <div className="actividad_imagen">
-            <img src={imagenesTermas[2]} alt="" />
+            <img src={imagenesTermas[2]} alt="Aguas termales de Termas Basavilbaso" />
           </div>
         </div>
         <div className="termas_main_list_actividad piscinas">
@@ -47,7 +47,7 @@ const Termas = () => {
             </p>
           </div>
           <div className="actividad_imagen">
-            <img src={imagenesTermas[3]} alt="" />
+            <img src={imagenesTermas[3]} alt="Variedad de Piscinas de Termas Basavilbaso" />
           </div>
         </div>
         <div className="termas_main_list_actividad resto">
@@ -60,7 +60,7 @@ const Termas = () => {
             </p>
           </div>
           <div className="actividad_imagen">
-            <img src={imagenesTermas[4]} alt="" />
+            <img src={imagenesTermas[4]} alt="Restaurante de Termas Basavilbaso" />
           </div>
         </div>
         <div className="termas_main_list_actividad invertido regionales">
@@ -74,7 +74,7 @@ const Termas = () => {
             </p>
           </div>
           <div className="actividad_imagen">
-            <img src={imagenesTermas[5]} alt="" />
+            <img src={imagenesTermas[5]} alt="Venta de regionales dentro de Termas Basavilbaso" />
           </div>
         </div>
         <div className="termas_main_list_actividad invertido instalaciones">
@@ -87,7 +87,7 @@ const Termas = () => {
             </p>
           </div>
           <div className="actividad_imagen">
-            <img src={imagenesTermas[6]} alt="" />
+            <img src={imagenesTermas[6]} alt="Instalaciones de Termas Basavilbaso" />
           </div>
         </div>
       </div>

@@ -252,11 +252,11 @@ footer .autor_logo {
 }
 
 footer .footer_logo p {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 footer .footer_logo p:last-child {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .footer_devs {  
@@ -278,12 +278,13 @@ footer .footer_logo p:last-child {
 
   .footer_redes_list li {
     height: 100%;
-    width: 2rem;
+    width: 3rem;
   }
 
   .footer_redes_list li a, .footer_redes_list li svg {
 
     width: 100%;
+    height: 100%;
   }
 
   .footer_devs {  

@@ -82,6 +82,9 @@
         "footer": [
             "https://i.imgur.com/C33vX1r.jpg",
             "https://i.imgur.com/RBYgbBh.jpg"
-        ]        
+        ],
+        "error404" : [
+            "https://i.imgur.com/I4WzMX9.jpg"
+        ]       
     }
 ]

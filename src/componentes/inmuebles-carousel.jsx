@@ -33,7 +33,7 @@ export default function InmueblesCarousel({imagenes}) {
             
             <SwiperSlide key={imagen}>
                 <div className='swiper-zoom-container'>
-                     <img src={imagen} alt="" />
+                     <img src={imagen} alt="Imagen inmueble" />
                  </div>
              </SwiperSlide>
         ))}            

@@ -41,13 +41,13 @@ export default function Body() {
         <h3>Termas Basavilbaso</h3>
         <div className="home_main_predio_imagenes">
           <div className="predio_imagen primera">
-            <img src={imagenesHome[5]} alt="" />
+            <img src={imagenesHome[5]} alt="Piscinas del Predio" />
           </div>
           <div className="predio_imagen imagen1">
-            <img src={imagenesHome[6]} alt="" />
+            <img src={imagenesHome[6]} alt="Reposeras e instalaciones del predio" />
           </div>
           <div className="predio_imagen imagen2">
-            <img src={imagenesHome[7]} alt="" />
+            <img src={imagenesHome[7]} alt="Atardecer en Termas Basavilbaso" />
           </div>
         </div>
       </div>

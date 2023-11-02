@@ -116,7 +116,7 @@ const Inmueble = () => {
           <InmueblesCarousel imagenes={imagenesInmueble3} />
           <div className="desc">
             <p>Vendo terreno/lote en Termas Basavilbaso.
-              Ubicación: Ruta Provincial N° 20.  Km 97 de la ciudad de Basavilbaso. Departamento Concepción del Uruguay. Pcia. Entre Ríos.</p>
+              Ubicación: Ruta Provincial N° 20.  Km 93 de la ciudad de Basavilbaso. Departamento Concepción del Uruguay. Pcia. Entre Ríos.</p>
             <ul>
               <li>Superficie: 375 m<sup>2</sup>.</li>
               <li>Medidas:  15m. x 25 m.</li>

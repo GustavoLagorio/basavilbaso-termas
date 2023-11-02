@@ -43,6 +43,12 @@ export function Bungalow() {
   const [checkIn, setCheckIn] = useState('');
   const [checkOut, setCheckOut] = useState('');
 
+  const videos = [
+    '<iframe width="560" height="315" src="https://www.youtube.com/embed/T4ynGaNUZD0?si=GdvMh9RyaREF_I2F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    '<iframe width="560" height="315" src="https://www.youtube.com/embed/T4ynGaNUZD0?si=GdvMh9RyaREF_I2F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    ''
+  ]
+
 
   // Realizar una solicitud al servidor para obtener el token
   useEffect(() => {
@@ -159,7 +165,7 @@ export function Bungalow() {
     }));
   }, [formulario.startDate, formulario.endDate, formulario.ocupantes]); // Se ejecutará cuando 'startDate' o 'endDate' cambien
 
-  useEffect(() => {
+  /*useEffect(() => {
 
     if (parseInt(id) === 4) {
 
@@ -177,7 +183,7 @@ export function Bungalow() {
 
     }
 
-  }, [id])
+  }, [id])*/
 
   useEffect(() => {
 
@@ -226,12 +232,15 @@ export function Bungalow() {
         content: 'custom-content',
         confirmButton: 'btn-custom'
       },
-      heightAuto: false  
-          
+      heightAuto: false
+
     })
   }
 
   if (!isLoading) {
+
+    const iframe = videos[id-1]
+    console.log(iframe);
 
     return (
       <main className="bungalow_main">
@@ -243,6 +252,7 @@ export function Bungalow() {
         <BungalowCarousel imagenes={bungalow.galeria} />
         <h2>Servicios y características</h2>
         <Comodidades comodidades={bungalow.comodidades} />
+        <div className="video" dangerouslySetInnerHTML={{ __html: iframe }}></div>
         <div className="precio">
           {bungalow.precio.map((precio, index) => (
             <div key={index}>
@@ -265,7 +275,7 @@ export function Bungalow() {
               Check-out: {checkOut} hs.
             </li>
             <li>
-              Formas de pago: 50% por transferencia bancaria para confirmar reserva y el resto al llegar al bungalow.
+              Formas de pago: 50% por transferencia bancaria para confirmar reserva y el resto al llegar al bungalow. El monto que se abona al hacer el check-in se hace al valor vigente del bungalow.
             </li>
             <li>
               No se admiten mascotas.

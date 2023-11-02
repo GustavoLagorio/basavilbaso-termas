@@ -11,15 +11,20 @@
 }
 
 .nav_logo {
-  height: 10vh;
+  height: 8vh;
+  margin-top: 1vh;
   overflow: hidden;
   justify-self: left;
-  width: 15%;
+  width: 20%;
+}
+
+.nav_logo a {
+  height: 100%;
 }
 
 .nav_logo img {
-  height: 5vh;
-  margin-top: 2.5vh;
+  height: 6vh;
+  margin-top: 1vh;
   max-width: 100%;
 }
 
@@ -38,7 +43,7 @@
 
 .nav_titulo p:last-child {
   font-family: 'Poppins', sans-serif;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   font-weight: 300;
   color: #0B95D6;
   margin-top: -0.7rem;
@@ -99,7 +104,7 @@
 
 .nav_button {
   height: 100%;
-  width: 15%;
+  width: 10%;
   text-align: right;
 }
 
@@ -113,14 +118,39 @@
   .nav_menu {
     width: 50%;
   }
+
+  .nav_titulo p {
+    font-size: 2rem;
+  }
+
+  .nav_titulo p:last-child {
+    font-size: 0.8rem;
+  }
 }
 
 @media (min-width: 992px) {
+  .nav {
+    justify-content: start;
+  }
   .nav_button {
     display: none;
   }
 
+  .nav_logo{
+    width: 10%;
+  }
+
+  .nav_logo a img {
+    margin: 1vh 0;
+  }
+
+  .nav_titulo {
+    width: 30%;
+  }
+
   .nav_menu {
+    width: 60%;
+    justify-self: end;
     position: static;
     padding: 0;
     background: none;
@@ -168,9 +198,16 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) {  
+  .nav_logo a img {
+    height: 7vh;
+    margin-top: 0.5vh;
+  }
+  .nav_titulo {
+    width: 40%;
+  }
   .nav_titulo p {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 
   .nav_titulo p:last-child {

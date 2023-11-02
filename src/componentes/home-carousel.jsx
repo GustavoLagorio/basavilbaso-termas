@@ -27,10 +27,9 @@ export default function HomeCarousel() {
             speed={1000}
             loop={true}
         >
-            <SwiperSlide><img src={ imagenesHome[1] } alt="" /></SwiperSlide>
-            <SwiperSlide><img src={ imagenesHome[2] } alt="" /></SwiperSlide>
-            <SwiperSlide><img src={ imagenesHome[3] } alt="" /></SwiperSlide>
-            <SwiperSlide><img src={ imagenesHome[4] } alt="" /></SwiperSlide>
+            <SwiperSlide><img src={ imagenesHome[1] } alt="Bungalow Añil 1" /></SwiperSlide>
+            <SwiperSlide><img src={ imagenesHome[2] } alt="Bungalow Añil 2" /></SwiperSlide>
+            <SwiperSlide><img src={ imagenesHome[3] } alt="Bungalow La Mery" /></SwiperSlide>
         </Swiper>
     );
 };

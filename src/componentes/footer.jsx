@@ -34,7 +34,7 @@ export default function Footer() {
           </button>
         </div>
         <div className="footer_ubicacion_mapa">
-          <img src={imagenesFooter[0]} alt="" />
+          <img src={imagenesFooter[0]} alt="Mapa ubicación Termas Basavilbaso" />
         </div>
         <div className="footer_ubicacion_rutas">
           <h3>Como llegar</h3>
@@ -66,7 +66,7 @@ export default function Footer() {
                 </svg>
               </span>
               <span>
-                <Link to="https://www.google.com/maps/dir/Montevideo+Departamento+de+Montevideo,+Uruguay/Termas+de+Basavilbaso+S.A.,+Km.+93+Ruta+20,+E3170+Basavilbaso,+Entre+R%C3%ADos/@-33.6357464,-58.8753615,8z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x959f80ffc63bf7d3:0x6b321b2e355bec99!2m2!1d-56.1851147!2d-34.9055016!1m5!1m1!1s0x95b1b218b1e06aa1:0x80055ce589987b6c!2m2!1d-58.8986039!2d-32.3843693?entry=ttu" className="ruta" target="_blank">Montevideo</Link>
+                <Link to="https://www.google.com/maps/dir/Basavilbaso,+Entre+R%C3%ADos/65000+Fray+Bentos,+Departamento+de+R%C3%ADo+Negro,+Uruguay/@-32.7873216,-58.6480981,10z/data=!4m14!4m13!1m5!1m1!1s0x95b1b1852d3d6783:0x29463f05fb7a41af!2m2!1d-58.87495!2d-32.3687833!1m5!1m1!1s0x95a54db81a243661:0x8d9425699fb741a8!2m2!1d-58.2988358!2d-33.1272934!3e0?entry=ttu" className="ruta" target="_blank">Fray Bentos</Link>
               </span>
             </li>
             <li>
