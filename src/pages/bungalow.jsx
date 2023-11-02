@@ -212,9 +212,10 @@ export function Bungalow() {
     // Formatear las fechas en el formato dd/mm/aa
     const formattedStartDate = format(formulario.startDate, 'dd/MM/yy');
     const formattedEndDate = format(formulario.endDate, 'dd/MM/yy');
+    const telefono = import.meta.env.VITE_API_CONTACTO
 
     const mensaje = `Hola mi nombre es ${formulario.nombre} ${formulario.apellido} y quiero reservar ${formulario.bungalow} del ${formattedStartDate} al ${formattedEndDate}`;
-    const enlaceWhatsApp = `https://wa.me/541134330889?text=${encodeURIComponent(mensaje)}`;
+    const enlaceWhatsApp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
     // Abrir WhatsApp en una nueva ventana o pestaña
     window.open(enlaceWhatsApp);
 

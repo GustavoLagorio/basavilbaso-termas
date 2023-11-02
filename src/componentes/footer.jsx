@@ -10,7 +10,6 @@ export default function Footer() {
   const handleContacto = () => {
 
     const telefono = import.meta.env.VITE_API_CONTACTO
-    console.log(telefono);
 
     const enlaceWhatsApp = `https://wa.me/${telefono}`;
 
