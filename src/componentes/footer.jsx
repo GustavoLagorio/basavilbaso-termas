@@ -119,7 +119,7 @@ export default function Footer() {
           <p>© Helios 2023</p>
         </span>
         <span className="autor_logo">
-          <Link onClick={handleContacto}><img src={imagenesFooter[1]} alt="Helios Web Desing" /></Link>
+          <a href="https://instagram.com/helioswebdesing?igshid=NGVhN2U2NjQ0Yg=="><img src={imagenesFooter[1]} alt="Helios Web Desing" /></a>
         </span>
       </div>
     </footer>
