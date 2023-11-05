@@ -43,15 +43,15 @@ export default function Header() {
             </li>
             <li className={activo === "actividades" ? "list_item activo" : "list_item"}>
               <HashLink to="/actividades#header" onClick={() => activarEnlace("actividades")}>Actividades</HashLink>
-            </li>
-            <li className="list_item">
-              <HashLink to="#contacto" >Contacto</HashLink>
-            </li>
+            </li>            
             <li className={activo === "termas" ? "list_item activo" : "list_item"}>
               <HashLink to="/termas#header" onClick={() => activarEnlace("termas")}>Termas</HashLink>
             </li>
             <li className={activo === "inmuebles" ? "list_item activo" : "list_item"}>
               <HashLink to="/inmuebles#header" onClick={() => activarEnlace("inmuebles")}>Inmuebles</HashLink>
+            </li>
+            <li className="list_item">
+              <HashLink to="#contacto" >Contacto</HashLink>
             </li>
           </ul>
         </div>

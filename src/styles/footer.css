@@ -149,6 +149,10 @@ footer .footer_redes_list {
   margin: 1rem;
 }
 
+#whatsapp:hover {
+  cursor: pointer;
+}
+
 .footer_devs {
   display: flex;
   justify-content: space-evenly;
