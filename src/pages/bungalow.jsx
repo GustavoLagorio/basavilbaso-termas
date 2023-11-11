@@ -46,7 +46,7 @@ export function Bungalow() {
   const videos = [
     '<iframe width="560" height="315" src="https://www.youtube.com/embed/T4ynGaNUZD0?si=GdvMh9RyaREF_I2F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
     '<iframe width="560" height="315" src="https://www.youtube.com/embed/T4ynGaNUZD0?si=GdvMh9RyaREF_I2F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-    ''
+    '<iframe width="560" height="315" src="https://www.youtube.com/embed/Dk2qSz0257A?si=SuvUpgGnnwlYdI5G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
   ]
 
 
@@ -165,26 +165,6 @@ export function Bungalow() {
     }));
   }, [formulario.startDate, formulario.endDate, formulario.ocupantes]); // Se ejecutará cuando 'startDate' o 'endDate' cambien
 
-  /*useEffect(() => {
-
-    if (parseInt(id) === 4) {
-
-      const ingreso = '13:00';
-      const out = '10:00';
-      setCheckIn(ingreso);
-      setCheckOut(out);
-
-    } else {
-      const ingreso = '10:00';
-
-      const out = '10:00';
-      setCheckIn(ingreso);
-      setCheckOut(out);
-
-    }
-
-  }, [id])*/
-
   useEffect(() => {
 
     if (formulario.noches > 0) {
@@ -240,8 +220,7 @@ export function Bungalow() {
 
   if (!isLoading) {
 
-    const iframe = videos[id-1]
-    console.log(iframe);
+    const iframe = videos[id - 1]
 
     return (
       <main className="bungalow_main">

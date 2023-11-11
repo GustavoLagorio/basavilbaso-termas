@@ -37,6 +37,9 @@
       padding: 0.5rem;
       background-color: #254b5e;
       color: #f1e6d2; }
+  .bungalows_main_filtro .btn-accion:hover {
+    cursor: pointer;
+  }
   .bungalows_main_list_bungalow {
     padding: 2rem 1rem; }
   .bungalows_main_list_bungalow .btn-accion {

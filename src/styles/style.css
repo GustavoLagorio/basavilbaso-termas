@@ -67,6 +67,10 @@ h6 {
   font-size: 0.7rem;
 }
 
+font {
+  background: none;
+}
+
 @media (min-width: 992px) {
   :root {
     font-size: 18px;
