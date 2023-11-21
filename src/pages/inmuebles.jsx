@@ -97,7 +97,7 @@ const Inmueble = () => {
               Casa de una planta. Excelente propiedad, muy confortable, luminosa. Con detalles distintivos. Muy buena orientación, soleada.
             </p>
             <p>
-              Dependencias: living comedor cocina integrada, tres (3) dormitorios, el principal con aire acondicionado split, baño en suite y toilette. Dos gabinetes de gas envasado y de termotanque.
+              Dependencias: living comedor cocina integrada, tres (3) dormitorios, el principal con aire acondicionado split, dos (2) baños, uno de ellos en suite y toilette. Dos (2) gabinetes de gas envasado y de termotanque.
             </p>
             <p>
               Superficie del terreno: 300 m<sup>2</sup>.
