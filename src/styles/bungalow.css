@@ -52,6 +52,36 @@
     object-position:  center center;
 }
 
+.bungalow_main_descripcion {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    margin-bottom: 2rem;
+}
+
+.bungalow_main_descripcion .desc .texto, #texto{
+    font-size: 1.2rem;
+}
+.bungalow_main_descripcion_list {
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+.bungalow_main_descripcion_list .bungalow_main_descripcion_list_item {
+    width: 75%;   
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.bungalow_main_descripcion_list li svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 1rem 0.5rem;
+}
+.nombre_item {
+    margin: 1rem 0;
+}
+
 h2 {
     text-align: center;
 }
@@ -227,6 +257,17 @@ img.swal2-image {
         width: 60%;
         margin: 3rem 20%;
     }
+
+    .bungalow_main_descripcion_list {
+        display: flex;
+        flex-flow: row wrap;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .bungalow_main_descripcion_list .bungalow_main_descripcion_list_item {
+        width: 50%;
+    }
     
     form {
         max-width: 80%;
@@ -251,6 +292,11 @@ img.swal2-image {
 
 
 @media (min-width: 992px) {
+    .bungalow_main_descripcion_list {
+        width: 70%;
+        margin-left: 15%;
+    }
+
     .bungalow_main_form_usuario {
         width: 60%;
         margin: auto 20%;
@@ -285,6 +331,17 @@ img.swal2-image {
     .bungalow_main .swiper {
         width: 40%;
         margin: 3rem 30%;
+    }
+
+    .bungalow_main_descripcion_list {
+        width: 90%;
+        margin-left: 5%;
+        justify-content: center;
+    }
+
+    .bungalow_main_descripcion_list .bungalow_main_descripcion_list_item {
+        width: max-content;
+        margin: 0 1rem;
     }
 
     .bungalow_main .video iframe{

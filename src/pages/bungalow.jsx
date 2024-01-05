@@ -2,6 +2,7 @@ import Calendario from "../componentes/calendario";
 import BungalowCarousel from "../componentes/bungalow-carousel";
 import { useParams } from "react-router-dom";
 import { Comodidades } from "../componentes/comodidades";
+import { Descripcion } from "../componentes/descripcion";
 import { useEffect, useState } from 'react';
 import { format, differenceInDays } from 'date-fns';
 import Swal from 'sweetalert2';
@@ -48,7 +49,6 @@ export function Bungalow() {
     '<iframe width="560" height="315" src="https://www.youtube.com/embed/T4ynGaNUZD0?si=GdvMh9RyaREF_I2F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
     '<iframe width="560" height="315" src="https://www.youtube.com/embed/Dk2qSz0257A?si=SuvUpgGnnwlYdI5G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
   ]
-
 
   // Realizar una solicitud al servidor para obtener el token
   useEffect(() => {
@@ -230,8 +230,9 @@ export function Bungalow() {
           </div>
         </div>
         <BungalowCarousel imagenes={bungalow.galeria} />
+        <Descripcion idBungalow={bungalow.idBungalow}/>
         <h2>Servicios y características</h2>
-        <Comodidades comodidades={bungalow.comodidades} />
+        <Comodidades comodidades={bungalow.comodidades} />        
         <div className="video" dangerouslySetInnerHTML={{ __html: iframe }}></div>
         <div className="precio">
           {bungalow.precio.map((precio, index) => (
