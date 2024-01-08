@@ -41,8 +41,9 @@ export function Bungalow() {
 
   const [total, setTotal] = useState(0);
 
+  /* Segmento para diferencias horarios de entrada y salida segun se requiera
   const [checkIn, setCheckIn] = useState('');
-  const [checkOut, setCheckOut] = useState('');
+  const [checkOut, setCheckOut] = useState('');*/
 
   const videos = [
     '<iframe width="560" height="315" src="https://www.youtube.com/embed/T4ynGaNUZD0?si=GdvMh9RyaREF_I2F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
@@ -250,10 +251,10 @@ export function Bungalow() {
           <p>Las condiciones son:</p>
           <ul>
             <li>
-              Check-in: {checkIn} hs.
+              Check-in: 10:00 hs.
             </li>
             <li>
-              Check-out: {checkOut} hs.
+              Check-out: 10:00 hs.
             </li>
             <li>
               Formas de pago: 50% por transferencia bancaria para confirmar reserva y el resto al llegar al bungalow. El monto que se abona al hacer el check-in se hace al valor vigente del bungalow.
